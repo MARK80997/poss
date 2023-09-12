@@ -1,0 +1,54 @@
+CRITICAL - 2023-07-21 00:25:12 --> Undefined variable $titulo
+in APPPATH\Views\unidades\nuevo.php on line 4.
+ 1 APPPATH\Views\unidades\nuevo.php(4): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $titulo', 'C:\\xampp\\htdocs\\pos\\app\\Views\\unidades\\nuevo.php', 4)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\pos\\app\\Views\\unidades\\nuevo.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('unidades/nuevo', [], true)
+ 5 APPPATH\Controllers\Unidades.php(32): view('unidades/nuevo')
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Unidades->nuevo()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Unidades))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-21 00:25:14 --> Undefined variable $titulo
+in APPPATH\Views\unidades\nuevo.php on line 4.
+ 1 APPPATH\Views\unidades\nuevo.php(4): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $titulo', 'C:\\xampp\\htdocs\\pos\\app\\Views\\unidades\\nuevo.php', 4)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\pos\\app\\Views\\unidades\\nuevo.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('unidades/nuevo', [], true)
+ 5 APPPATH\Controllers\Unidades.php(32): view('unidades/nuevo')
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Unidades->nuevo()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Unidades))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-21 00:25:24 --> Undefined variable $titulo
+in APPPATH\Views\unidades\nuevo.php on line 4.
+ 1 APPPATH\Views\unidades\nuevo.php(4): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $titulo', 'C:\\xampp\\htdocs\\pos\\app\\Views\\unidades\\nuevo.php', 4)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\pos\\app\\Views\\unidades\\nuevo.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('unidades/nuevo', [], true)
+ 5 APPPATH\Controllers\Unidades.php(32): view('unidades/nuevo')
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Unidades->nuevo()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Unidades))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-21 00:25:32 --> Undefined variable $titulo
+in APPPATH\Views\unidades\nuevo.php on line 4.
+ 1 APPPATH\Views\unidades\nuevo.php(4): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $titulo', 'C:\\xampp\\htdocs\\pos\\app\\Views\\unidades\\nuevo.php', 4)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\pos\\app\\Views\\unidades\\nuevo.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('unidades/nuevo', [], true)
+ 5 APPPATH\Controllers\Unidades.php(32): view('unidades/nuevo')
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Unidades->nuevo()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Unidades))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-21 22:02:35 --> "require" is not a valid rule.
+in SYSTEMPATH\Validation\Validation.php on line 320.
+ 1 SYSTEMPATH\Validation\Validation.php(320): CodeIgniter\Validation\Exceptions\ValidationException::forRuleNotFound('require')
+ 2 SYSTEMPATH\Validation\Validation.php(170): CodeIgniter\Validation\Validation->processRules('nombre_corto', 'nombre_corto', 'lalo', [...], [...])
+ 3 SYSTEMPATH\Controller.php(140): CodeIgniter\Validation\Validation->run()
+ 4 APPPATH\Controllers\Unidades.php(53): CodeIgniter\Controller->validate([...])
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Unidades->insertar()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Unidades))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

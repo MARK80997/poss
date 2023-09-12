@@ -1,0 +1,822 @@
+CRITICAL - 2023-09-12 00:00:19 --> FPDF error: The document is closed
+in APPPATH\Libraries\fpdf.php on line 267.
+ 1 APPPATH\Libraries\fpdf.php(291): FPDF->Error('The document is closed')
+ 2 APPPATH\Controllers\Usuarios.php(168): FPDF->AddPage()
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Usuarios->pdf()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-12 00:02:38 --> FPDF error: The document is closed
+in APPPATH\Libraries\fpdf.php on line 267.
+ 1 APPPATH\Libraries\fpdf.php(291): FPDF->Error('The document is closed')
+ 2 APPPATH\Controllers\Usuarios.php(171): FPDF->AddPage()
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Usuarios->pdf()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-12 00:03:21 --> FPDF error: The document is closed
+in APPPATH\Libraries\fpdf.php on line 267.
+ 1 APPPATH\Libraries\fpdf.php(291): FPDF->Error('The document is closed')
+ 2 APPPATH\Controllers\Usuarios.php(171): FPDF->AddPage()
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Usuarios->pdf()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-12 00:05:11 --> Class "FPDF" not found
+in APPPATH\Controllers\Usuarios.php on line 165.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Usuarios->pdf()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-12 00:05:46 --> FPDF error: The document is closed
+in APPPATH\Libraries\fpdf.php on line 267.
+ 1 APPPATH\Libraries\fpdf.php(291): FPDF->Error('The document is closed')
+ 2 APPPATH\Controllers\Usuarios.php(172): FPDF->AddPage()
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Usuarios->pdf()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-12 00:06:26 --> FPDF error: The document is closed
+in APPPATH\Libraries\fpdf.php on line 267.
+ 1 APPPATH\Libraries\fpdf.php(291): FPDF->Error('The document is closed')
+ 2 APPPATH\Controllers\Usuarios.php(172): FPDF->AddPage()
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Usuarios->pdf()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-12 00:06:43 --> FPDF error: The document is closed
+in APPPATH\Libraries\fpdf.php on line 267.
+ 1 APPPATH\Libraries\fpdf.php(291): FPDF->Error('The document is closed')
+ 2 APPPATH\Controllers\Usuarios.php(172): FPDF->AddPage()
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Usuarios->pdf()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-12 00:07:20 --> Class "FPDF" not found
+in APPPATH\Controllers\Usuarios.php on line 166.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Usuarios->pdf()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-12 00:08:07 --> FPDF error: The document is closed
+in APPPATH\Libraries\fpdf.php on line 267.
+ 1 APPPATH\Libraries\fpdf.php(291): FPDF->Error('The document is closed')
+ 2 APPPATH\Controllers\Usuarios.php(173): FPDF->AddPage()
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Usuarios->pdf()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-12 00:08:24 --> FPDF error: The document is closed
+in APPPATH\Libraries\fpdf.php on line 267.
+ 1 APPPATH\Libraries\fpdf.php(291): FPDF->Error('The document is closed')
+ 2 APPPATH\Controllers\Usuarios.php(173): FPDF->AddPage()
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Usuarios->pdf()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-12 00:08:34 --> require_once(C:\xampp\htdocs\pos\app\ibraries/fpdf.php): Failed to open stream: No such file or directory
+in APPPATH\Controllers\Usuarios.php on line 20.
+ 1 APPPATH\Controllers\Usuarios.php(20): CodeIgniter\Debug\Exceptions->errorHandler(2, 'require_once(C:\\xampp\\htdocs\\pos\\app\\ibraries/fpdf.php): Failed to open stream: No such file or directory', 'C:\\xampp\\htdocs\\pos\\app\\Controllers\\Usuarios.php', 20)
+ 2 APPPATH\Controllers\Usuarios.php(20): require_once()
+ 3 SYSTEMPATH\Autoloader\Autoloader.php(312): include_once('C:\\xampp\\htdocs\\pos\\app\\Controllers\\Usuarios.php')
+ 4 SYSTEMPATH\Autoloader\Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\pos\\app\\Controllers\\Usuarios.php')
+ 5 SYSTEMPATH\Autoloader\Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Usuarios')
+ 6 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Usuarios')
+ 7 SYSTEMPATH\CodeIgniter.php(892): class_exists('\\App\\Controllers\\Usuarios', true)
+ 8 SYSTEMPATH\CodeIgniter.php(486): CodeIgniter\CodeIgniter->startController()
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-12 00:08:52 --> FPDF error: The document is closed
+in APPPATH\Libraries\fpdf.php on line 267.
+ 1 APPPATH\Libraries\fpdf.php(291): FPDF->Error('The document is closed')
+ 2 APPPATH\Controllers\Usuarios.php(173): FPDF->AddPage()
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Usuarios->pdf()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-12 00:09:59 --> FPDF error: The document is closed
+in APPPATH\Libraries\fpdf.php on line 267.
+ 1 APPPATH\Libraries\fpdf.php(291): FPDF->Error('The document is closed')
+ 2 APPPATH\Controllers\Usuarios.php(172): FPDF->AddPage()
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Usuarios->pdf()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-12 00:10:17 --> FPDF error: No page has been added yet
+in APPPATH\Libraries\fpdf.php on line 267.
+ 1 APPPATH\Libraries\fpdf.php(1463): FPDF->Error('No page has been added yet')
+ 2 APPPATH\Libraries\fpdf.php(648): FPDF->_out('BT 2.83 824.12 Td (generando PDF) Tj ET')
+ 3 APPPATH\Controllers\Usuarios.php(170): FPDF->Cell(40, 10, 'generando PDF')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Usuarios->pdf()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-12 00:10:28 --> FPDF error: The document is closed
+in APPPATH\Libraries\fpdf.php on line 267.
+ 1 APPPATH\Libraries\fpdf.php(291): FPDF->Error('The document is closed')
+ 2 APPPATH\Controllers\Usuarios.php(172): FPDF->AddPage()
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Usuarios->pdf()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-12 00:11:11 --> FPDF error: The document is closed
+in APPPATH\Libraries\fpdf.php on line 267.
+ 1 APPPATH\Libraries\fpdf.php(291): FPDF->Error('The document is closed')
+ 2 APPPATH\Controllers\Usuarios.php(171): FPDF->AddPage()
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Usuarios->pdf()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-09-12 00:11:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-09-12 00:11:22 --> FPDF error: The document is closed
+in APPPATH\Libraries\fpdf.php on line 267.
+ 1 APPPATH\Libraries\fpdf.php(291): FPDF->Error('The document is closed')
+ 2 APPPATH\Controllers\Usuarios.php(171): FPDF->AddPage()
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Usuarios->pdf()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-12 00:11:23 --> FPDF error: The document is closed
+in APPPATH\Libraries\fpdf.php on line 267.
+ 1 APPPATH\Libraries\fpdf.php(291): FPDF->Error('The document is closed')
+ 2 APPPATH\Controllers\Usuarios.php(171): FPDF->AddPage()
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Usuarios->pdf()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-12 00:12:07 --> FPDF error: The document is closed
+in APPPATH\Libraries\fpdf.php on line 267.
+ 1 APPPATH\Libraries\fpdf.php(291): FPDF->Error('The document is closed')
+ 2 APPPATH\Controllers\Usuarios.php(171): FPDF->AddPage()
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Usuarios->pdf()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-12 00:12:26 --> FPDF error: The document is closed
+in APPPATH\Libraries\fpdf.php on line 267.
+ 1 APPPATH\Libraries\fpdf.php(291): FPDF->Error('The document is closed')
+ 2 APPPATH\Controllers\Usuarios.php(171): FPDF->AddPage()
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Usuarios->pdf()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-12 00:14:01 --> FPDF error: The document is closed
+in APPPATH\Libraries\fpdf.php on line 267.
+ 1 APPPATH\Libraries\fpdf.php(291): FPDF->Error('The document is closed')
+ 2 APPPATH\Controllers\Usuarios.php(171): FPDF->AddPage()
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Usuarios->pdf()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-12 00:14:40 --> Class "FPDF" not found
+in APPPATH\Controllers\Usuarios.php on line 165.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Usuarios->pdf()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-12 00:14:56 --> FPDF error: The document is closed
+in APPPATH\Libraries\fpdf.php on line 267.
+ 1 APPPATH\Libraries\fpdf.php(291): FPDF->Error('The document is closed')
+ 2 APPPATH\Controllers\Usuarios.php(171): FPDF->AddPage()
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Usuarios->pdf()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-12 00:16:11 --> FPDF error: The document is closed
+in APPPATH\Libraries\fpdf\fpdf.php on line 267.
+ 1 APPPATH\Libraries\fpdf\fpdf.php(291): FPDF->Error('The document is closed')
+ 2 APPPATH\Controllers\Usuarios.php(171): FPDF->AddPage()
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Usuarios->pdf()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-12 00:16:28 --> require_once(C:\xampp\htdocs\pos\app\/Libraries/fpd/fpdf.php): Failed to open stream: No such file or directory
+in APPPATH\Controllers\Usuarios.php on line 19.
+ 1 APPPATH\Controllers\Usuarios.php(19): CodeIgniter\Debug\Exceptions->errorHandler(2, 'require_once(C:\\xampp\\htdocs\\pos\\app\\/Libraries/fpd/fpdf.php): Failed to open stream: No such file or directory', 'C:\\xampp\\htdocs\\pos\\app\\Controllers\\Usuarios.php', 19)
+ 2 APPPATH\Controllers\Usuarios.php(19): require_once()
+ 3 SYSTEMPATH\Autoloader\Autoloader.php(312): include_once('C:\\xampp\\htdocs\\pos\\app\\Controllers\\Usuarios.php')
+ 4 SYSTEMPATH\Autoloader\Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\pos\\app\\Controllers\\Usuarios.php')
+ 5 SYSTEMPATH\Autoloader\Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Usuarios')
+ 6 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Usuarios')
+ 7 SYSTEMPATH\CodeIgniter.php(892): class_exists('\\App\\Controllers\\Usuarios', true)
+ 8 SYSTEMPATH\CodeIgniter.php(486): CodeIgniter\CodeIgniter->startController()
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-12 00:16:41 --> FPDF error: The document is closed
+in APPPATH\Libraries\fpdf\fpdf.php on line 267.
+ 1 APPPATH\Libraries\fpdf\fpdf.php(291): FPDF->Error('The document is closed')
+ 2 APPPATH\Controllers\Usuarios.php(171): FPDF->AddPage()
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Usuarios->pdf()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-12 00:18:03 --> FPDF error: The document is closed
+in APPPATH\Libraries\fpdf\fpdf.php on line 267.
+ 1 APPPATH\Libraries\fpdf\fpdf.php(291): FPDF->Error('The document is closed')
+ 2 APPPATH\Controllers\Usuarios.php(171): FPDF->AddPage()
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Usuarios->pdf()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-12 00:18:26 --> require_once(C:\xampp\htdocs\pos\app\/Libraries/fpdf.php): Failed to open stream: No such file or directory
+in APPPATH\Controllers\Usuarios.php on line 19.
+ 1 APPPATH\Controllers\Usuarios.php(19): CodeIgniter\Debug\Exceptions->errorHandler(2, 'require_once(C:\\xampp\\htdocs\\pos\\app\\/Libraries/fpdf.php): Failed to open stream: No such file or directory', 'C:\\xampp\\htdocs\\pos\\app\\Controllers\\Usuarios.php', 19)
+ 2 APPPATH\Controllers\Usuarios.php(19): require_once()
+ 3 SYSTEMPATH\Autoloader\Autoloader.php(312): include_once('C:\\xampp\\htdocs\\pos\\app\\Controllers\\Usuarios.php')
+ 4 SYSTEMPATH\Autoloader\Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\pos\\app\\Controllers\\Usuarios.php')
+ 5 SYSTEMPATH\Autoloader\Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Usuarios')
+ 6 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Usuarios')
+ 7 SYSTEMPATH\CodeIgniter.php(892): class_exists('\\App\\Controllers\\Usuarios', true)
+ 8 SYSTEMPATH\CodeIgniter.php(486): CodeIgniter\CodeIgniter->startController()
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-12 00:18:39 --> FPDF error: The document is closed
+in APPPATH\Libraries\fpdf\fpdf.php on line 267.
+ 1 APPPATH\Libraries\fpdf\fpdf.php(291): FPDF->Error('The document is closed')
+ 2 APPPATH\Controllers\Usuarios.php(171): FPDF->AddPage()
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Usuarios->pdf()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-12 00:19:29 --> FPDF error: The document is closed
+in APPPATH\Libraries\fpdf\fpdf.php on line 267.
+ 1 APPPATH\Libraries\fpdf\fpdf.php(291): FPDF->Error('The document is closed')
+ 2 APPPATH\Controllers\Usuarios.php(171): FPDF->AddPage()
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Usuarios->pdf()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-12 00:19:56 --> FPDF error: The document is closed
+in APPPATH\Libraries\fpdf\fpdf.php on line 267.
+ 1 APPPATH\Libraries\fpdf\fpdf.php(291): FPDF->Error('The document is closed')
+ 2 APPPATH\Controllers\Usuarios.php(171): FPDF->AddPage()
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Usuarios->pdf()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-09-12 00:20:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-09-12 00:21:03 --> FPDF error: The document is closed
+in APPPATH\Libraries\fpdf\fpdf.php on line 267.
+ 1 APPPATH\Libraries\fpdf\fpdf.php(291): FPDF->Error('The document is closed')
+ 2 APPPATH\Controllers\Usuarios.php(171): FPDF->AddPage()
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Usuarios->pdf()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-12 00:21:04 --> FPDF error: The document is closed
+in APPPATH\Libraries\fpdf\fpdf.php on line 267.
+ 1 APPPATH\Libraries\fpdf\fpdf.php(291): FPDF->Error('The document is closed')
+ 2 APPPATH\Controllers\Usuarios.php(171): FPDF->AddPage()
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Usuarios->pdf()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-12 00:22:55 --> FPDF error: The document is closed
+in APPPATH\Libraries\fpdf\fpdf.php on line 267.
+ 1 APPPATH\Libraries\fpdf\fpdf.php(291): FPDF->Error('The document is closed')
+ 2 APPPATH\Controllers\Usuarios.php(171): FPDF->AddPage()
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Usuarios->pdf()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-09-12 03:04:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-12 03:04:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-12 03:04:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-12 03:07:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-12 03:07:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-12 03:07:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-12 03:07:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-09-12 03:07:50 --> FPDF error: The document is closed
+in APPPATH\Libraries\fpdf\fpdf.php on line 267.
+ 1 APPPATH\Libraries\fpdf\fpdf.php(291): FPDF->Error('The document is closed')
+ 2 APPPATH\Controllers\Usuarios.php(171): FPDF->AddPage()
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Usuarios->pdf()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-12 03:07:51 --> FPDF error: The document is closed
+in APPPATH\Libraries\fpdf\fpdf.php on line 267.
+ 1 APPPATH\Libraries\fpdf\fpdf.php(291): FPDF->Error('The document is closed')
+ 2 APPPATH\Controllers\Usuarios.php(171): FPDF->AddPage()
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Usuarios->pdf()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-09-12 03:08:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-12 03:09:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-09-12 03:09:54 --> FPDF error: The document is closed
+in APPPATH\Libraries\fpdf\fpdf.php on line 267.
+ 1 APPPATH\Libraries\fpdf\fpdf.php(291): FPDF->Error('The document is closed')
+ 2 APPPATH\Controllers\Usuarios.php(171): FPDF->AddPage()
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Usuarios->pdf()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-09-12 03:10:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-12 03:11:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-12 03:11:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-12 03:11:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-12 03:11:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-12 03:11:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-09-12 03:11:37 --> FPDF error: The document is closed
+in APPPATH\Libraries\fpdf\fpdf.php on line 267.
+ 1 APPPATH\Libraries\fpdf\fpdf.php(291): FPDF->Error('The document is closed')
+ 2 APPPATH\Controllers\Usuarios.php(171): FPDF->AddPage()
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Usuarios->pdf()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-09-12 03:11:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-09-12 03:11:48 --> FPDF error: The document is closed
+in APPPATH\Libraries\fpdf\fpdf.php on line 267.
+ 1 APPPATH\Libraries\fpdf\fpdf.php(291): FPDF->Error('The document is closed')
+ 2 APPPATH\Controllers\Usuarios.php(171): FPDF->AddPage()
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Usuarios->pdf()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-12 03:15:55 --> FPDF error: The document is closed
+in APPPATH\Libraries\fpdf\fpdf.php on line 267.
+ 1 APPPATH\Libraries\fpdf\fpdf.php(291): FPDF->Error('The document is closed')
+ 2 APPPATH\Controllers\Usuarios.php(171): FPDF->AddPage()
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Usuarios->pdf()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-12 03:23:11 --> FPDF error: The document is closed
+in APPPATH\Libraries\fpdf\fpdf.php on line 267.
+ 1 APPPATH\Libraries\fpdf\fpdf.php(291): FPDF->Error('The document is closed')
+ 2 APPPATH\Controllers\Usuarios.php(171): FPDF->AddPage()
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Usuarios->pdf()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-12 03:24:45 --> FPDF error: The document is closed
+in APPPATH\Libraries\fpdf\fpdf.php on line 267.
+ 1 APPPATH\Libraries\fpdf\fpdf.php(291): FPDF->Error('The document is closed')
+ 2 APPPATH\Controllers\Usuarios.php(171): FPDF->AddPage()
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Usuarios->pdf()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-12 03:24:47 --> FPDF error: The document is closed
+in APPPATH\Libraries\fpdf\fpdf.php on line 267.
+ 1 APPPATH\Libraries\fpdf\fpdf.php(291): FPDF->Error('The document is closed')
+ 2 APPPATH\Controllers\Usuarios.php(171): FPDF->AddPage()
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Usuarios->pdf()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-12 03:24:52 --> FPDF error: The document is closed
+in APPPATH\Libraries\fpdf\fpdf.php on line 267.
+ 1 APPPATH\Libraries\fpdf\fpdf.php(291): FPDF->Error('The document is closed')
+ 2 APPPATH\Controllers\Usuarios.php(171): FPDF->AddPage()
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Usuarios->pdf()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-09-12 03:24:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-09-12 03:24:55 --> FPDF error: The document is closed
+in APPPATH\Libraries\fpdf\fpdf.php on line 267.
+ 1 APPPATH\Libraries\fpdf\fpdf.php(291): FPDF->Error('The document is closed')
+ 2 APPPATH\Controllers\Usuarios.php(171): FPDF->AddPage()
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Usuarios->pdf()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-12 03:24:56 --> FPDF error: The document is closed
+in APPPATH\Libraries\fpdf\fpdf.php on line 267.
+ 1 APPPATH\Libraries\fpdf\fpdf.php(291): FPDF->Error('The document is closed')
+ 2 APPPATH\Controllers\Usuarios.php(171): FPDF->AddPage()
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Usuarios->pdf()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-12 03:25:02 --> FPDF error: Incorrect output destination: prueba
+in APPPATH\Libraries\fpdf\fpdf.php on line 267.
+ 1 APPPATH\Libraries\fpdf\fpdf.php(1033): FPDF->Error('Incorrect output destination: prueba')
+ 2 APPPATH\Controllers\Usuarios.php(170): FPDF->Output('prueba', 'doc.pdf')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Usuarios->pdf()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-12 03:25:07 --> FPDF error: The document is closed
+in APPPATH\Libraries\fpdf\fpdf.php on line 267.
+ 1 APPPATH\Libraries\fpdf\fpdf.php(291): FPDF->Error('The document is closed')
+ 2 APPPATH\Controllers\Usuarios.php(171): FPDF->AddPage()
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Usuarios->pdf()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-12 03:25:11 --> FPDF error: The document is closed
+in APPPATH\Libraries\fpdf\fpdf.php on line 267.
+ 1 APPPATH\Libraries\fpdf\fpdf.php(291): FPDF->Error('The document is closed')
+ 2 APPPATH\Controllers\Usuarios.php(171): FPDF->AddPage()
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Usuarios->pdf()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-12 03:26:36 --> FPDF error: The document is closed
+in APPPATH\Libraries\fpdf\fpdf.php on line 267.
+ 1 APPPATH\Libraries\fpdf\fpdf.php(291): FPDF->Error('The document is closed')
+ 2 APPPATH\Controllers\Usuarios.php(171): FPDF->AddPage()
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Usuarios->pdf()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-12 03:26:58 --> FPDF error: The document is closed
+in APPPATH\Libraries\fpdf\fpdf.php on line 267.
+ 1 APPPATH\Libraries\fpdf\fpdf.php(291): FPDF->Error('The document is closed')
+ 2 APPPATH\Controllers\Usuarios.php(171): FPDF->AddPage()
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Usuarios->pdf()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-12 03:27:10 --> FPDF error: The document is closed
+in APPPATH\Libraries\fpdf\fpdf.php on line 267.
+ 1 APPPATH\Libraries\fpdf\fpdf.php(291): FPDF->Error('The document is closed')
+ 2 APPPATH\Controllers\Usuarios.php(171): FPDF->AddPage()
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Usuarios->pdf()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-09-12 03:29:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-12 03:29:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-12 03:29:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-12 03:35:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-09-12 03:35:05 --> FPDF error: Unknown page size: i
+in APPPATH\Libraries\fpdf\fpdf.php on line 267.
+ 1 APPPATH\Libraries\fpdf\fpdf.php(1068): FPDF->Error('Unknown page size: i')
+ 2 APPPATH\Libraries\fpdf\fpdf.php(1098): FPDF->_getpagesize('i')
+ 3 APPPATH\Libraries\fpdf\fpdf.php(310): FPDF->_beginpage('O', 'I', 0)
+ 4 APPPATH\Controllers\Usuarios.php(167): FPDF->AddPage('OTRO', 'I')
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Usuarios->pdf()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-12 03:35:35 --> FPDF error: The document is closed
+in APPPATH\Libraries\fpdf\fpdf.php on line 267.
+ 1 APPPATH\Libraries\fpdf\fpdf.php(291): FPDF->Error('The document is closed')
+ 2 APPPATH\Controllers\Usuarios.php(171): FPDF->AddPage()
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Usuarios->pdf()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-12 03:36:32 --> FPDF error: The document is closed
+in APPPATH\Libraries\fpdf\fpdf.php on line 267.
+ 1 APPPATH\Libraries\fpdf\fpdf.php(291): FPDF->Error('The document is closed')
+ 2 APPPATH\Controllers\Usuarios.php(171): FPDF->AddPage()
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Usuarios->pdf()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-12 03:38:27 --> FPDF error: The document is closed
+in APPPATH\Libraries\fpdf\fpdf.php on line 267.
+ 1 APPPATH\Libraries\fpdf\fpdf.php(291): FPDF->Error('The document is closed')
+ 2 APPPATH\Controllers\Usuarios.php(171): FPDF->AddPage()
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Usuarios->pdf()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-12 03:39:24 --> FPDF error: The document is closed
+in APPPATH\Libraries\fpdf\fpdf.php on line 267.
+ 1 APPPATH\Libraries\fpdf\fpdf.php(291): FPDF->Error('The document is closed')
+ 2 APPPATH\Controllers\Usuarios.php(171): FPDF->AddPage()
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Usuarios->pdf()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-12 03:43:55 --> FPDF error: The document is closed
+in APPPATH\Libraries\fpdf\fpdf.php on line 267.
+ 1 APPPATH\Libraries\fpdf\fpdf.php(291): FPDF->Error('The document is closed')
+ 2 APPPATH\Controllers\Usuarios.php(171): FPDF->AddPage()
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Usuarios->pdf()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-09-12 03:45:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-12 04:28:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-12 04:28:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-12 04:49:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-12 04:49:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-12 04:49:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-12 04:49:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-09-12 04:49:39 --> FPDF error: The document is closed
+in APPPATH\Libraries\fpdf\fpdf.php on line 267.
+ 1 APPPATH\Libraries\fpdf\fpdf.php(291): FPDF->Error('The document is closed')
+ 2 APPPATH\Controllers\Usuarios.php(173): FPDF->AddPage()
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Usuarios->pdf()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-12 04:57:13 --> FPDF error: The document is closed
+in APPPATH\Libraries\fpdf\fpdf.php on line 267.
+ 1 APPPATH\Libraries\fpdf\fpdf.php(291): FPDF->Error('The document is closed')
+ 2 APPPATH\Controllers\Usuarios.php(173): FPDF->AddPage()
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Usuarios->pdf()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-09-12 04:58:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-12 04:58:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-12 04:58:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-12 04:58:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-12 04:59:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-09-12 05:01:28 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Usuarios.php on line 170.
+ 1 APPPATH\Controllers\Usuarios.php(170): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\pos\\app\\Controllers\\Usuarios.php', 170)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Usuarios->pdf()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-12 05:04:23 --> Array to string conversion
+in APPPATH\Controllers\Usuarios.php on line 168.
+ 1 APPPATH\Controllers\Usuarios.php(168): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'C:\\xampp\\htdocs\\pos\\app\\Controllers\\Usuarios.php', 168)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Usuarios->pdf()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-09-12 05:07:15 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '!!
+ LIMIT 1' at line 3 in C:\xampp\htdocs\pos\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\pos\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\pos\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\pos\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\pos\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\pos\system\Model.php(268): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\pos\system\BaseModel.php(656): CodeIgniter\Model->doFirst()
+#6 C:\xampp\htdocs\pos\app\Controllers\Usuarios.php(166): CodeIgniter\BaseModel->first()
+#7 C:\xampp\htdocs\pos\system\CodeIgniter.php(934): App\Controllers\Usuarios->pdf()
+#8 C:\xampp\htdocs\pos\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+#9 C:\xampp\htdocs\pos\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\pos\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-09-12 05:07:15 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '!!
+ LIMIT 1' at line 3
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *
+FROM `usuarios`
+WHERE nombrehola!!
+ LIMIT 1', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `usuarios`
+WHERE nombrehola!!
+ LIMIT 1')
+ 3 SYSTEMPATH\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `usuarios`
+WHERE nombrehola!!
+ LIMIT 1')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `usuarios`
+WHERE nombrehola!!
+ LIMIT 1', [], false)
+ 5 SYSTEMPATH\Model.php(268): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(656): CodeIgniter\Model->doFirst()
+ 7 APPPATH\Controllers\Usuarios.php(166): CodeIgniter\BaseModel->first()
+ 8 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Usuarios->pdf()
+ 9 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+10 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-12 05:14:44 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Usuarios.php on line 169.
+ 1 APPPATH\Controllers\Usuarios.php(169): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\pos\\app\\Controllers\\Usuarios.php', 169)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Usuarios->pdf()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-12 05:14:46 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Usuarios.php on line 169.
+ 1 APPPATH\Controllers\Usuarios.php(169): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\pos\\app\\Controllers\\Usuarios.php', 169)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Usuarios->pdf()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-12 05:15:30 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Usuarios.php on line 170.
+ 1 APPPATH\Controllers\Usuarios.php(170): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\pos\\app\\Controllers\\Usuarios.php', 170)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Usuarios->pdf()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-12 05:17:22 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Usuarios.php on line 169.
+ 1 APPPATH\Controllers\Usuarios.php(169): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\pos\\app\\Controllers\\Usuarios.php', 169)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Usuarios->pdf()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-12 05:18:52 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Usuarios.php on line 170.
+ 1 APPPATH\Controllers\Usuarios.php(170): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\pos\\app\\Controllers\\Usuarios.php', 170)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Usuarios->pdf()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-12 05:22:03 --> Cannot access offset of type string on string
+in APPPATH\Controllers\Usuarios.php on line 172.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Usuarios->pdf()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-12 05:36:41 --> FPDF error: The document is closed
+in APPPATH\Libraries\fpdf\fpdf.php on line 267.
+ 1 APPPATH\Libraries\fpdf\fpdf.php(291): FPDF->Error('The document is closed')
+ 2 APPPATH\Controllers\Usuarios.php(174): FPDF->AddPage()
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Usuarios->pdf()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-12 05:37:36 --> FPDF error: The document is closed
+in APPPATH\Libraries\fpdf\fpdf.php on line 267.
+ 1 APPPATH\Libraries\fpdf\fpdf.php(291): FPDF->Error('The document is closed')
+ 2 APPPATH\Controllers\Usuarios.php(174): FPDF->AddPage()
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Usuarios->pdf()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-12 05:37:54 --> FPDF error: The document is closed
+in APPPATH\Libraries\fpdf\fpdf.php on line 267.
+ 1 APPPATH\Libraries\fpdf\fpdf.php(291): FPDF->Error('The document is closed')
+ 2 APPPATH\Controllers\Usuarios.php(174): FPDF->AddPage()
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Usuarios->pdf()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-12 05:39:54 --> FPDF error: The document is closed
+in APPPATH\Libraries\fpdf\fpdf.php on line 267.
+ 1 APPPATH\Libraries\fpdf\fpdf.php(291): FPDF->Error('The document is closed')
+ 2 APPPATH\Controllers\Usuarios.php(174): FPDF->AddPage()
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Usuarios->pdf()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-12 05:43:56 --> FPDF error: The document is closed
+in APPPATH\Libraries\fpdf\fpdf.php on line 267.
+ 1 APPPATH\Libraries\fpdf\fpdf.php(291): FPDF->Error('The document is closed')
+ 2 APPPATH\Controllers\Usuarios.php(174): FPDF->AddPage()
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Usuarios->pdf()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-12 05:44:53 --> FPDF error: The document is closed
+in APPPATH\Libraries\fpdf\fpdf.php on line 267.
+ 1 APPPATH\Libraries\fpdf\fpdf.php(291): FPDF->Error('The document is closed')
+ 2 APPPATH\Controllers\Usuarios.php(174): FPDF->AddPage()
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Usuarios->pdf()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-09-12 05:46:23 --> mysqli_sql_exception: Table 'pos.pacientes' doesn't exist in C:\xampp\htdocs\pos\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\pos\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT * FROM p...', 0)
+#1 C:\xampp\htdocs\pos\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM p...')
+#2 C:\xampp\htdocs\pos\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM p...')
+#3 C:\xampp\htdocs\pos\system\Model.php(836): CodeIgniter\Database\BaseConnection->query('SELECT * FROM p...')
+#4 C:\xampp\htdocs\pos\app\Controllers\Usuarios.php(200): CodeIgniter\Model->__call('query', Array)
+#5 C:\xampp\htdocs\pos\system\CodeIgniter.php(934): App\Controllers\Usuarios->pdf()
+#6 C:\xampp\htdocs\pos\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+#7 C:\xampp\htdocs\pos\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\pos\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-09-12 05:46:23 --> Table 'pos.pacientes' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT * FROM pacientes', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM pacientes')
+ 3 SYSTEMPATH\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM pacientes')
+ 4 SYSTEMPATH\Model.php(836): CodeIgniter\Database\BaseConnection->query('SELECT * FROM pacientes')
+ 5 APPPATH\Controllers\Usuarios.php(200): CodeIgniter\Model->__call('query', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Usuarios->pdf()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-09-12 05:46:45 --> mysqli_sql_exception: Table 'pos.pacientes' doesn't exist in C:\xampp\htdocs\pos\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\pos\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT * FROM p...', 0)
+#1 C:\xampp\htdocs\pos\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM p...')
+#2 C:\xampp\htdocs\pos\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM p...')
+#3 C:\xampp\htdocs\pos\system\Model.php(836): CodeIgniter\Database\BaseConnection->query('SELECT * FROM p...')
+#4 C:\xampp\htdocs\pos\app\Controllers\Usuarios.php(200): CodeIgniter\Model->__call('query', Array)
+#5 C:\xampp\htdocs\pos\system\CodeIgniter.php(934): App\Controllers\Usuarios->pdf()
+#6 C:\xampp\htdocs\pos\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+#7 C:\xampp\htdocs\pos\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\pos\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-09-12 05:46:45 --> Table 'pos.pacientes' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT * FROM pacientes', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM pacientes')
+ 3 SYSTEMPATH\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM pacientes')
+ 4 SYSTEMPATH\Model.php(836): CodeIgniter\Database\BaseConnection->query('SELECT * FROM pacientes')
+ 5 APPPATH\Controllers\Usuarios.php(200): CodeIgniter\Model->__call('query', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Usuarios->pdf()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-09-12 05:47:05 --> mysqli_sql_exception: Table 'pos.pacientes' doesn't exist in C:\xampp\htdocs\pos\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\pos\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT * FROM p...', 0)
+#1 C:\xampp\htdocs\pos\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM p...')
+#2 C:\xampp\htdocs\pos\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM p...')
+#3 C:\xampp\htdocs\pos\system\Model.php(836): CodeIgniter\Database\BaseConnection->query('SELECT * FROM p...')
+#4 C:\xampp\htdocs\pos\app\Controllers\Usuarios.php(200): CodeIgniter\Model->__call('query', Array)
+#5 C:\xampp\htdocs\pos\system\CodeIgniter.php(934): App\Controllers\Usuarios->pdf()
+#6 C:\xampp\htdocs\pos\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+#7 C:\xampp\htdocs\pos\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\pos\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-09-12 05:47:05 --> Table 'pos.pacientes' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT * FROM pacientes', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM pacientes')
+ 3 SYSTEMPATH\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM pacientes')
+ 4 SYSTEMPATH\Model.php(836): CodeIgniter\Database\BaseConnection->query('SELECT * FROM pacientes')
+ 5 APPPATH\Controllers\Usuarios.php(200): CodeIgniter\Model->__call('query', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Usuarios->pdf()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-12 05:47:42 --> Call to undefined method CodeIgniter\Database\MySQLi\Result::fetch_assoc()
+in APPPATH\Controllers\Usuarios.php on line 202.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Usuarios->pdf()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-12 05:48:25 --> Call to undefined method CodeIgniter\Database\MySQLi\Result::fetch_assoc()
+in APPPATH\Controllers\Usuarios.php on line 202.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Usuarios->pdf()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-12 05:49:04 --> Call to undefined method CodeIgniter\Database\MySQLi\Result::fetch_assoc()
+in APPPATH\Controllers\Usuarios.php on line 202.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Usuarios->pdf()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-12 05:49:37 --> Call to undefined method CodeIgniter\Database\MySQLi\Result::fetch_assoc()
+in APPPATH\Controllers\Usuarios.php on line 202.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Usuarios->pdf()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-12 05:52:08 --> Call to undefined method CodeIgniter\Database\MySQLi\Result::fetch_assoc()
+in APPPATH\Controllers\Usuarios.php on line 202.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Usuarios->pdf()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-12 05:52:33 --> Call to undefined method CodeIgniter\Database\MySQLi\Result::fetch_assoc()
+in APPPATH\Controllers\Usuarios.php on line 202.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Usuarios->pdf()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-12 05:53:46 --> Call to undefined method CodeIgniter\Database\MySQLi\Result::fetch_assoc()
+in APPPATH\Controllers\Usuarios.php on line 202.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Usuarios->pdf()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-12 05:57:48 --> FPDF error: The document is closed
+in APPPATH\Libraries\fpdf\fpdf.php on line 267.
+ 1 APPPATH\Libraries\fpdf\fpdf.php(291): FPDF->Error('The document is closed')
+ 2 APPPATH\Controllers\Usuarios.php(173): FPDF->AddPage()
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Usuarios->pdf()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-12 06:04:17 --> Undefined array key ""
+in APPPATH\Controllers\Usuarios.php on line 187.
+ 1 APPPATH\Controllers\Usuarios.php(187): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key ""', 'C:\\xampp\\htdocs\\pos\\app\\Controllers\\Usuarios.php', 187)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Usuarios->pdf()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-12 06:14:15 --> FPDF error: No font has been set
+in APPPATH\Libraries\fpdf\fpdf.php on line 267.
+ 1 APPPATH\Libraries\fpdf\fpdf.php(630): FPDF->Error('No font has been set')
+ 2 APPPATH\Controllers\Usuarios.php(174): FPDF->Cell(40, 10, 'Nombre', 1)
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Usuarios->pdf()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-12 06:23:31 --> Undefined array key "edad"
+in APPPATH\Controllers\Usuarios.php on line 190.
+ 1 APPPATH\Controllers\Usuarios.php(190): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "edad"', 'C:\\xampp\\htdocs\\pos\\app\\Controllers\\Usuarios.php', 190)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Usuarios->pdf()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-12 06:23:34 --> Undefined array key "edad"
+in APPPATH\Controllers\Usuarios.php on line 190.
+ 1 APPPATH\Controllers\Usuarios.php(190): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "edad"', 'C:\\xampp\\htdocs\\pos\\app\\Controllers\\Usuarios.php', 190)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Usuarios->pdf()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-09-12 06:34:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-12 06:34:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-12 06:34:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-12 06:35:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-12 06:36:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-12 06:36:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

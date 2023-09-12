@@ -1,0 +1,182 @@
+INFO - 2023-09-06 06:27:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-06 06:27:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-06 06:29:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-06 06:29:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-06 06:29:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-06 06:33:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-06 06:33:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-06 06:33:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-06 06:33:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-06 06:33:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-06 06:33:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-06 06:34:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-06 06:34:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-06 06:34:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-06 06:35:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-06 06:36:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-06 06:36:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-06 06:37:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-09-06 06:37:04 --> require(PHPMailer/PHPMailerAutoload.php): Failed to open stream: No such file or directory
+in APPPATH\Views\usuarios\nuevo.php on line 1.
+ 1 APPPATH\Views\usuarios\nuevo.php(1): CodeIgniter\Debug\Exceptions->errorHandler(2, 'require(PHPMailer/PHPMailerAutoload.php): Failed to open stream: No such file or directory', 'C:\\xampp\\htdocs\\pos\\app\\Views\\usuarios\\nuevo.php', 1)
+ 2 APPPATH\Views\usuarios\nuevo.php(1): require()
+ 3 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\pos\\app\\Views\\usuarios\\nuevo.php')
+ 4 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('usuarios/nuevo', [], true)
+ 6 APPPATH\Controllers\Usuarios.php(124): view('usuarios/nuevo', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Usuarios->nuevo()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-09-06 06:37:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-06 06:37:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-06 06:41:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-06 06:42:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-06 06:43:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-06 06:43:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-06 06:44:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-06 06:44:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-06 06:48:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-06 06:48:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-06 06:49:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-06 06:49:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-06 06:50:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-06 06:50:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-09-06 06:50:32 --> require(PHPMailer/PHPMailerAutoload.php): Failed to open stream: No such file or directory
+in APPPATH\Views\usuarios\nuevo.php on line 1.
+ 1 APPPATH\Views\usuarios\nuevo.php(1): CodeIgniter\Debug\Exceptions->errorHandler(2, 'require(PHPMailer/PHPMailerAutoload.php): Failed to open stream: No such file or directory', 'C:\\xampp\\htdocs\\pos\\app\\Views\\usuarios\\nuevo.php', 1)
+ 2 APPPATH\Views\usuarios\nuevo.php(1): require()
+ 3 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\pos\\app\\Views\\usuarios\\nuevo.php')
+ 4 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('usuarios/nuevo', [], true)
+ 6 APPPATH\Controllers\Usuarios.php(124): view('usuarios/nuevo', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Usuarios->nuevo()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-09-06 06:50:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-06 06:51:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-06 06:52:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-06 06:52:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-06 06:52:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-06 06:52:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-06 06:52:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-06 06:52:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-09-06 07:20:05 --> Undefined array key "merida.marcos.137@gmail.com"
+in APPPATH\Views\usuarios\correo\index.php on line 31.
+ 1 APPPATH\Views\usuarios\correo\index.php(31): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "merida.marcos.137@gmail.com"', 'C:\\xampp\\htdocs\\pos\\app\\Views\\usuarios\\correo\\index.php', 31)
+ 2 APPPATH\Views\usuarios\correo\index.php(10): contact()
+ 3 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\pos\\app\\Views\\usuarios\\correo\\index.php')
+ 4 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('usuarios/correo/index', [], true)
+ 6 APPPATH\Controllers\Usuarios.php(334): view('usuarios/correo/index')
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Usuarios->correo()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-06 07:24:30 --> Undefined array key "merida.marcos.137@gmail.com"
+in APPPATH\Views\usuarios\correo\index.php on line 31.
+ 1 APPPATH\Views\usuarios\correo\index.php(31): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "merida.marcos.137@gmail.com"', 'C:\\xampp\\htdocs\\pos\\app\\Views\\usuarios\\correo\\index.php', 31)
+ 2 APPPATH\Views\usuarios\correo\index.php(10): contact()
+ 3 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\pos\\app\\Views\\usuarios\\correo\\index.php')
+ 4 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('usuarios/correo/index', [], true)
+ 6 APPPATH\Controllers\Usuarios.php(334): view('usuarios/correo/index')
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Usuarios->correo()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-09-06 07:27:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-06 07:27:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-06 07:29:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-06 07:29:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-06 07:29:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-06 07:30:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-06 07:30:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-06 07:31:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-06 07:32:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-06 07:32:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-06 07:32:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-06 07:35:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-06 07:38:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-06 07:38:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-06 07:39:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-06 07:40:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-06 07:42:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-06 07:42:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-06 07:45:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-06 07:45:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-09-06 07:47:59 --> Invalid file: "usuarios/correo/index.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('usuarios/correo/index.php')
+ 2 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('usuarios/correo/index', [], true)
+ 3 APPPATH\Controllers\Usuarios.php(334): view('usuarios/correo/index')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Usuarios->correo()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-06 07:48:20 --> require(PHPMailer/PHPMailerAutoload.php): Failed to open stream: No such file or directory
+in APPPATH\Views\usuarios\index.php on line 1.
+ 1 APPPATH\Views\usuarios\index.php(1): CodeIgniter\Debug\Exceptions->errorHandler(2, 'require(PHPMailer/PHPMailerAutoload.php): Failed to open stream: No such file or directory', 'C:\\xampp\\htdocs\\pos\\app\\Views\\usuarios\\index.php', 1)
+ 2 APPPATH\Views\usuarios\index.php(1): require()
+ 3 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\pos\\app\\Views\\usuarios\\index.php')
+ 4 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('usuarios/index', [], true)
+ 6 APPPATH\Controllers\Usuarios.php(334): view('usuarios/index')
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Usuarios->correo()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-06 07:49:41 --> require(/correo/PHPMailer/PHPMailerAutoload.php): Failed to open stream: No such file or directory
+in APPPATH\Views\usuarios\index.php on line 1.
+ 1 APPPATH\Views\usuarios\index.php(1): CodeIgniter\Debug\Exceptions->errorHandler(2, 'require(/correo/PHPMailer/PHPMailerAutoload.php): Failed to open stream: No such file or directory', 'C:\\xampp\\htdocs\\pos\\app\\Views\\usuarios\\index.php', 1)
+ 2 APPPATH\Views\usuarios\index.php(1): require()
+ 3 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\pos\\app\\Views\\usuarios\\index.php')
+ 4 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('usuarios/index', [], true)
+ 6 APPPATH\Controllers\Usuarios.php(334): view('usuarios/index')
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Usuarios->correo()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-06 07:51:06 --> require(/correo/PHPMailer/PHPMailerAutoload.php): Failed to open stream: No such file or directory
+in APPPATH\Views\usuarios\index.php on line 1.
+ 1 APPPATH\Views\usuarios\index.php(1): CodeIgniter\Debug\Exceptions->errorHandler(2, 'require(/correo/PHPMailer/PHPMailerAutoload.php): Failed to open stream: No such file or directory', 'C:\\xampp\\htdocs\\pos\\app\\Views\\usuarios\\index.php', 1)
+ 2 APPPATH\Views\usuarios\index.php(1): require()
+ 3 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\pos\\app\\Views\\usuarios\\index.php')
+ 4 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('usuarios/index', [], true)
+ 6 APPPATH\Controllers\Usuarios.php(334): view('usuarios/index')
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Usuarios->correo()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-06 07:52:01 --> require(/PHPMailer/PHPMailerAutoload.php): Failed to open stream: No such file or directory
+in APPPATH\Views\usuarios\index.php on line 1.
+ 1 APPPATH\Views\usuarios\index.php(1): CodeIgniter\Debug\Exceptions->errorHandler(2, 'require(/PHPMailer/PHPMailerAutoload.php): Failed to open stream: No such file or directory', 'C:\\xampp\\htdocs\\pos\\app\\Views\\usuarios\\index.php', 1)
+ 2 APPPATH\Views\usuarios\index.php(1): require()
+ 3 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\pos\\app\\Views\\usuarios\\index.php')
+ 4 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('usuarios/index', [], true)
+ 6 APPPATH\Controllers\Usuarios.php(334): view('usuarios/index')
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Usuarios->correo()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-09-06 07:53:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-06 08:00:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-06 08:00:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-06 08:03:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-06 08:06:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-06 08:06:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-06 08:06:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-06 08:07:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-06 08:07:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-06 08:07:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-06 08:08:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-06 08:08:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-06 08:08:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-06 08:08:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-06 08:08:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-06 08:12:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-06 08:12:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

@@ -1,0 +1,179 @@
+ERROR - 2023-07-26 01:10:38 --> mysqli_sql_exception: Duplicate entry '80997' for key 'productos.codigo' in C:\xampp\htdocs\pos\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\pos\system\Database\MySQLi\Connection.php(295): mysqli->query('UPDATE `product...', 0)
+#1 C:\xampp\htdocs\pos\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `product...')
+#2 C:\xampp\htdocs\pos\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `product...')
+#3 C:\xampp\htdocs\pos\system\Database\BaseBuilder.php(2476): CodeIgniter\Database\BaseConnection->query('UPDATE `product...', Array, false)
+#4 C:\xampp\htdocs\pos\system\Model.php(396): CodeIgniter\Database\BaseBuilder->update()
+#5 C:\xampp\htdocs\pos\system\BaseModel.php(943): CodeIgniter\Model->doUpdate(Array, Array)
+#6 C:\xampp\htdocs\pos\system\Model.php(756): CodeIgniter\BaseModel->update(Array, Array)
+#7 C:\xampp\htdocs\pos\app\Controllers\Productos.php(136): CodeIgniter\Model->update('6', Array)
+#8 C:\xampp\htdocs\pos\system\CodeIgniter.php(934): App\Controllers\Productos->actualizar()
+#9 C:\xampp\htdocs\pos\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+#10 C:\xampp\htdocs\pos\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\pos\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-07-26 01:10:38 --> Duplicate entry '80997' for key 'productos.codigo'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('UPDATE `productos` SET `codigo` = \'80997\', `nombre` = \'otro\', `precio_venta` = \'100.00\', `precio_compra` = \'140.00\', `stock_minimo` = \'23\', `inventariable` = \'1\', `id_unidad` = \'7\', `id_categoria` = \'2\', `fecha_edit` = \'2023-07-26 01:10:37\'
+WHERE `productos`.`id` IN (\'6\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `productos` SET `codigo` = \'80997\', `nombre` = \'otro\', `precio_venta` = \'100.00\', `precio_compra` = \'140.00\', `stock_minimo` = \'23\', `inventariable` = \'1\', `id_unidad` = \'7\', `id_categoria` = \'2\', `fecha_edit` = \'2023-07-26 01:10:37\'
+WHERE `productos`.`id` IN (\'6\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `productos` SET `codigo` = \'80997\', `nombre` = \'otro\', `precio_venta` = \'100.00\', `precio_compra` = \'140.00\', `stock_minimo` = \'23\', `inventariable` = \'1\', `id_unidad` = \'7\', `id_categoria` = \'2\', `fecha_edit` = \'2023-07-26 01:10:37\'
+WHERE `productos`.`id` IN (\'6\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2476): CodeIgniter\Database\BaseConnection->query('UPDATE `productos` SET `codigo` = :codigo:, `nombre` = :nombre:, `precio_venta` = :precio_venta:, `precio_compra` = :precio_compra:, `stock_minimo` = :stock_minimo:, `inventariable` = :inventariable:, `id_unidad` = :id_unidad:, `id_categoria` = :id_categoria:, `fecha_edit` = :fecha_edit:
+WHERE `productos`.`id` IN :productos.id:', [...], false)
+ 5 SYSTEMPATH\Model.php(396): CodeIgniter\Database\BaseBuilder->update()
+ 6 SYSTEMPATH\BaseModel.php(943): CodeIgniter\Model->doUpdate([...], [...])
+ 7 SYSTEMPATH\Model.php(756): CodeIgniter\BaseModel->update([...], [...])
+ 8 APPPATH\Controllers\Productos.php(136): CodeIgniter\Model->update('6', [...])
+ 9 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Productos->actualizar()
+10 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+11 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-07-26 01:18:20 --> mysqli_sql_exception: Duplicate entry '12' for key 'productos.codigo' in C:\xampp\htdocs\pos\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\pos\system\Database\MySQLi\Connection.php(295): mysqli->query('UPDATE `product...', 0)
+#1 C:\xampp\htdocs\pos\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `product...')
+#2 C:\xampp\htdocs\pos\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `product...')
+#3 C:\xampp\htdocs\pos\system\Database\BaseBuilder.php(2476): CodeIgniter\Database\BaseConnection->query('UPDATE `product...', Array, false)
+#4 C:\xampp\htdocs\pos\system\Model.php(396): CodeIgniter\Database\BaseBuilder->update()
+#5 C:\xampp\htdocs\pos\system\BaseModel.php(943): CodeIgniter\Model->doUpdate(Array, Array)
+#6 C:\xampp\htdocs\pos\system\Model.php(756): CodeIgniter\BaseModel->update(Array, Array)
+#7 C:\xampp\htdocs\pos\app\Controllers\Productos.php(136): CodeIgniter\Model->update('5', Array)
+#8 C:\xampp\htdocs\pos\system\CodeIgniter.php(934): App\Controllers\Productos->actualizar()
+#9 C:\xampp\htdocs\pos\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+#10 C:\xampp\htdocs\pos\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\pos\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-07-26 01:18:20 --> Duplicate entry '12' for key 'productos.codigo'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('UPDATE `productos` SET `codigo` = \'12\', `nombre` = \'yuca\', `precio_venta` = \'300.00\', `precio_compra` = \'340.00\', `stock_minimo` = \'20\', `inventariable` = \'1\', `id_unidad` = \'7\', `id_categoria` = \'2\', `fecha_edit` = \'2023-07-26 01:18:20\'
+WHERE `productos`.`id` IN (\'5\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `productos` SET `codigo` = \'12\', `nombre` = \'yuca\', `precio_venta` = \'300.00\', `precio_compra` = \'340.00\', `stock_minimo` = \'20\', `inventariable` = \'1\', `id_unidad` = \'7\', `id_categoria` = \'2\', `fecha_edit` = \'2023-07-26 01:18:20\'
+WHERE `productos`.`id` IN (\'5\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `productos` SET `codigo` = \'12\', `nombre` = \'yuca\', `precio_venta` = \'300.00\', `precio_compra` = \'340.00\', `stock_minimo` = \'20\', `inventariable` = \'1\', `id_unidad` = \'7\', `id_categoria` = \'2\', `fecha_edit` = \'2023-07-26 01:18:20\'
+WHERE `productos`.`id` IN (\'5\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2476): CodeIgniter\Database\BaseConnection->query('UPDATE `productos` SET `codigo` = :codigo:, `nombre` = :nombre:, `precio_venta` = :precio_venta:, `precio_compra` = :precio_compra:, `stock_minimo` = :stock_minimo:, `inventariable` = :inventariable:, `id_unidad` = :id_unidad:, `id_categoria` = :id_categoria:, `fecha_edit` = :fecha_edit:
+WHERE `productos`.`id` IN :productos.id:', [...], false)
+ 5 SYSTEMPATH\Model.php(396): CodeIgniter\Database\BaseBuilder->update()
+ 6 SYSTEMPATH\BaseModel.php(943): CodeIgniter\Model->doUpdate([...], [...])
+ 7 SYSTEMPATH\Model.php(756): CodeIgniter\BaseModel->update([...], [...])
+ 8 APPPATH\Controllers\Productos.php(136): CodeIgniter\Model->update('5', [...])
+ 9 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Productos->actualizar()
+10 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+11 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-07-26 01:37:01 --> mysqli_sql_exception: Duplicate entry '12' for key 'productos.codigo' in C:\xampp\htdocs\pos\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\pos\system\Database\MySQLi\Connection.php(295): mysqli->query('UPDATE `product...', 0)
+#1 C:\xampp\htdocs\pos\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `product...')
+#2 C:\xampp\htdocs\pos\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `product...')
+#3 C:\xampp\htdocs\pos\system\Database\BaseBuilder.php(2476): CodeIgniter\Database\BaseConnection->query('UPDATE `product...', Array, false)
+#4 C:\xampp\htdocs\pos\system\Model.php(396): CodeIgniter\Database\BaseBuilder->update()
+#5 C:\xampp\htdocs\pos\system\BaseModel.php(943): CodeIgniter\Model->doUpdate(Array, Array)
+#6 C:\xampp\htdocs\pos\system\Model.php(756): CodeIgniter\BaseModel->update(Array, Array)
+#7 C:\xampp\htdocs\pos\app\Controllers\Productos.php(137): CodeIgniter\Model->update('5', Array)
+#8 C:\xampp\htdocs\pos\system\CodeIgniter.php(934): App\Controllers\Productos->actualizar()
+#9 C:\xampp\htdocs\pos\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+#10 C:\xampp\htdocs\pos\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\pos\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-07-26 01:37:01 --> Duplicate entry '12' for key 'productos.codigo'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('UPDATE `productos` SET `codigo` = \'12\', `nombre` = \'yuca\', `precio_venta` = \'300.00\', `precio_compra` = \'340.00\', `stock_minimo` = \'20\', `inventariable` = \'1\', `id_unidad` = \'7\', `id_categoria` = \'2\', `fecha_edit` = \'2023-07-26 01:37:01\'
+WHERE `productos`.`id` IN (\'5\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `productos` SET `codigo` = \'12\', `nombre` = \'yuca\', `precio_venta` = \'300.00\', `precio_compra` = \'340.00\', `stock_minimo` = \'20\', `inventariable` = \'1\', `id_unidad` = \'7\', `id_categoria` = \'2\', `fecha_edit` = \'2023-07-26 01:37:01\'
+WHERE `productos`.`id` IN (\'5\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `productos` SET `codigo` = \'12\', `nombre` = \'yuca\', `precio_venta` = \'300.00\', `precio_compra` = \'340.00\', `stock_minimo` = \'20\', `inventariable` = \'1\', `id_unidad` = \'7\', `id_categoria` = \'2\', `fecha_edit` = \'2023-07-26 01:37:01\'
+WHERE `productos`.`id` IN (\'5\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2476): CodeIgniter\Database\BaseConnection->query('UPDATE `productos` SET `codigo` = :codigo:, `nombre` = :nombre:, `precio_venta` = :precio_venta:, `precio_compra` = :precio_compra:, `stock_minimo` = :stock_minimo:, `inventariable` = :inventariable:, `id_unidad` = :id_unidad:, `id_categoria` = :id_categoria:, `fecha_edit` = :fecha_edit:
+WHERE `productos`.`id` IN :productos.id:', [...], false)
+ 5 SYSTEMPATH\Model.php(396): CodeIgniter\Database\BaseBuilder->update()
+ 6 SYSTEMPATH\BaseModel.php(943): CodeIgniter\Model->doUpdate([...], [...])
+ 7 SYSTEMPATH\Model.php(756): CodeIgniter\BaseModel->update([...], [...])
+ 8 APPPATH\Controllers\Productos.php(137): CodeIgniter\Model->update('5', [...])
+ 9 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Productos->actualizar()
+10 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+11 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-26 01:41:10 --> syntax error, unexpected token "<"
+in APPPATH\Controllers\Productos.php on line 111.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\pos\\app\\Controllers\\productos.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\productos')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\productos')
+ 4 SYSTEMPATH\CodeIgniter.php(892): class_exists('\\App\\Controllers\\productos', true)
+ 5 SYSTEMPATH\CodeIgniter.php(486): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-26 06:40:46 --> Undefined variable $producto
+in APPPATH\Views\clientes\editar.php on line 14.
+ 1 APPPATH\Views\clientes\editar.php(14): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $producto', 'C:\\xampp\\htdocs\\pos\\app\\Views\\clientes\\editar.php', 14)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\pos\\app\\Views\\clientes\\editar.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('clientes/editar', [], true)
+ 5 APPPATH\Controllers\Clientes.php(101): view('clientes/editar', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Clientes->editar('1')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Clientes))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-26 06:45:43 --> Undefined variable $cliente
+in APPPATH\Views\clientes\editar.php on line 14.
+ 1 APPPATH\Views\clientes\editar.php(14): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $cliente', 'C:\\xampp\\htdocs\\pos\\app\\Views\\clientes\\editar.php', 14)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\pos\\app\\Views\\clientes\\editar.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('clientes/editar', [], true)
+ 5 APPPATH\Controllers\Clientes.php(101): view('clientes/editar', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Clientes->editar('1')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Clientes))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-26 06:55:21 --> Undefined variable $cliente
+in APPPATH\Views\clientes\editar.php on line 14.
+ 1 APPPATH\Views\clientes\editar.php(14): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $cliente', 'C:\\xampp\\htdocs\\pos\\app\\Views\\clientes\\editar.php', 14)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\pos\\app\\Views\\clientes\\editar.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('clientes/editar', [], true)
+ 5 APPPATH\Controllers\Clientes.php(106): view('clientes/editar', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Clientes->editar('1')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Clientes))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-26 06:58:16 --> Undefined variable $cliente
+in APPPATH\Views\clientes\editar.php on line 14.
+ 1 APPPATH\Views\clientes\editar.php(14): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $cliente', 'C:\\xampp\\htdocs\\pos\\app\\Views\\clientes\\editar.php', 14)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\pos\\app\\Views\\clientes\\editar.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('clientes/editar', [], true)
+ 5 APPPATH\Controllers\Clientes.php(106): view('clientes/editar', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Clientes->editar('1')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Clientes))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-26 20:17:34 --> Invalid file: "usuarios/usuarios.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('usuarios/usuarios.php')
+ 2 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('usuarios/usuarios', [], true)
+ 3 APPPATH\Controllers\Usuarios.php(55): view('usuarios/usuarios', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Usuarios->index()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-26 20:23:12 --> Invalid file: "clientes/nuevo.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('clientes/nuevo.php')
+ 2 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('clientes/nuevo', [], true)
+ 3 APPPATH\Controllers\Clientes.php(61): view('clientes/nuevo', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Clientes->nuevo()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Clientes))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-26 20:23:18 --> Invalid file: "clientes/eliminados.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('clientes/eliminados.php')
+ 2 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('clientes/eliminados', [], true)
+ 3 APPPATH\Controllers\Clientes.php(49): view('clientes/eliminados', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Clientes->eliminados()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Clientes))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
