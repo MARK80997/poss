@@ -35,18 +35,18 @@
                                     <form method="POST" action="<?php echo base_url(); ?>usuarios/valida" >
                                         <div class="form-floating mb-3">
                                             <input class="form-control" id="usuario" type="text" placeholder="Ingersa tu ususario" name="usuario" />
-                                            <label for="usuario">USUARIO</label>
+                                            <label for="usuario">USUARIO-NUEVO</label>
                                         </div>
 
                                         <div class="form-floating mb-3">
                                             <input class="form-control" id="password" type="password" placeholder="Ingresa tu password" name="password" value="<?php echo set_value('password'); ?>"/>
-                                            <label for="password">Contraseña</label>
+                                            <label for="password">Contraseña-NUEVO</label>
                                         </div>
                                        
 
                                         <div class="d-flex align-items-center justify-content-between mt-4 mb-0">
 
-                                            <button type="submit" class="btn btn-primary" >Ingresar</button>
+                                            <button type="submit" class="btn btn-primary" >Ingresar-NUEVO</button>
                                         </div>
                                         <?php if (isset($validation)) { ?>
                                             <div class="alert alert-danger">
