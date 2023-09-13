@@ -28,25 +28,25 @@
                         <div class="col-lg-5">
                             <div class="card shadow-lg border-0 rounded-lg mt-5">
                                 <div class="card-header">
-                                    <h3 class="text-center font-weight-light my-4">INICIAR SECIÓN EN LA FERÍA!!-nuevo-3</h3>
+                                    <h3 class="text-center font-weight-light my-4">INICIAR SECIÓN EN LA FERRETERÍA!!-OTRO</h3>
                                 </div>
                                 <div class="card-body">
 
                                     <form method="POST" action="<?php echo base_url(); ?>usuarios/valida" >
                                         <div class="form-floating mb-3">
                                             <input class="form-control" id="usuario" type="text" placeholder="Ingersa tu ususario" name="usuario" />
-                                            <label for="usuario">USUARIO-nuevo-3</label>
+                                            <label for="usuario">USUARIO-OTRO-</label>
                                         </div>
 
                                         <div class="form-floating mb-3">
                                             <input class="form-control" id="password" type="password" placeholder="Ingresa tu password" name="password" value="<?php echo set_value('password'); ?>"/>
-                                            <label for="password">Contraseña-nuevo-3</label>
+                                            <label for="password">Contraseña-OTRO-</label>
                                         </div>
                                        
 
                                         <div class="d-flex align-items-center justify-content-between mt-4 mb-0">
 
-                                            <button type="submit" class="btn btn-primary" >IngresarNUEVO-3</button>
+                                            <button type="submit" class="btn btn-primary" >Ingresar-OTRO-</button>
                                         </div>
                                         <?php if (isset($validation)) { ?>
                                             <div class="alert alert-danger">
