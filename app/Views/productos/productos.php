@@ -179,20 +179,8 @@
         <!--CAMPO DONDE SE DARA LECTURA AL CÓDIGO QR GENERADO ANTERIORMENTE-->
 
         <!--CAMPO DONDE SE GENERA EL CODIGO QR-->
-        <div class="row">
-            <div class="col-sm-2">
-                <?php
-                $nombre = 'LEONARDOvalencia';
-                // Configuración del código QR
-                $size = 800; // Tamaño del código QR
-                $margin = 70; // Margen alrededor del código QR
-                // Generar el código QR
-                QRcode::png($nombre, 'path-to-save-QR-code.png', QR_ECLEVEL_L, $size, $margin);
-                echo '<img src="path-to-save-QR-code.png" alt="Código QR">';
-                ?>
-            </div>
-            <div class="col-sm-9"></div>
-        </div>
+       
+    
     </main>
 
 
