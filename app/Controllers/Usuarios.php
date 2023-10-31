@@ -1,45 +1,27 @@
 <?php
 
-//namespace App\Libraries\fpdf; //llmamos a la nombre de espacio "Libraries"
 namespace App\Controllers;
 
 use App\Controllers\BaseController;
 use App\Models\UsuariosModel;
-use App\Models\CajasModel;
-use App\Models\RolesModel;
-
-use PhpOffice\PhpSpreadsheet\Spreadsheet;
-//use PhpOffice\PhpSpreadsheet\Writer\Xlsx; //LA COMENTAMOS YA QUE NO LA ESTAMOS UTILIZANDO
-use PhpOffice\PhpSpreadsheet\IOFactory;
-//Llmando a los métodos y funciones de la librería phpOfice
-//que se encuentran en la la carpeta libreries.
-//require 'vendor/autoload.php';
-
-use FPDF; //
-require_once APPPATH . '/Libraries/fpdf/fpdf.php';
-
 
 class Usuarios extends BaseController
 {
-
-    protected $usuarios, $cajas, $roles;
+    protected $usuarios;
     protected $reglas, $reglasLogin, $reglasCambia;
 
     public function __construct()
     {
         $this->usuarios = new UsuariosModel();
-        $this->cajas = new CajasModel();
-        $this->roles = new RolesModel();
-
 
 
 
         /*ESTE ARREGLO CUMPLE LA FUNCIÓN DE QUE LOS CAMPOS SEAN OBLIGATORIOS EN ESTE MÓDULO*/
         helper(['form']);
         $this->reglas = [
-            'usuario' =>
+            'nombreUsuario' =>
             [
-                'rules' => 'required|is_unique[usuarios.usuario]', 'errors' =>
+                'rules' => 'required|is_unique[usuarios.nombreUsuario]', 'errors' =>
                 [
                     'required' => 'El CAMPO  ususario ES OBLIGATORIO!!',
                     'is_unique' => 'El USUARIO ya existe!!'
@@ -57,32 +39,22 @@ class Usuarios extends BaseController
                 'matches' => 'LAS CONTRASEÑAS NO COINCIDEN!!'
             ]],
 
-
-            //'nombre' =>
-            //['rules' => 'required', 'errors' =>
-            //['required' => 'El CAMPO  nombre ES OBLIGATORIO!!']],
-
-
-            'id_caja' =>
-            ['rules' => 'required', 'errors' =>
-            ['required' => 'El CAMPO  caja  ES OBLIGATORIO!!']],
-
-            'id_rol' =>
+            'rol' =>
             ['rules' => 'required', 'errors' =>
             ['required' => 'El CAMPO  rol ES OBLIGATORIO!!']]
         ];
 
         /*ESTE ARREGLO ES PARA VALIDAR EL INICIO DE SESSIÓN DEL LOGIN*/
         $this->reglasLogin = [
-            'usuario' =>
+            'nombreUsuario' =>
             ['rules' => 'required', 'errors' =>
-            ['required' => 'EL USUARIO Y/O CONTRASEÑA SON INCORRECTOS']],
+            ['required' => 'El CAMPO ES OBLIGATORIO!!']],
 
-            //'password' =>
-            //['rules' => 'required', 'errors' =>
-            //[
-            'required' => 'El CAMPO  re pasword ES OBLIGATORIO!!'
-            //]]
+            'rol' =>
+            ['rules' => 'required', 'errors' =>
+            [
+                'required' => 'El CAMPO  rol ES OBLIGATORIO!!'
+            ]]
         ];
 
 
@@ -101,23 +73,333 @@ class Usuarios extends BaseController
         ];
     }
 
-    public function index($activo = 1)
+    public function index($estado = 1)
     {
+        $session = session();
+        $rolUsu = $session->rol;
+        $rol = "Administrador";
+
+        if ($rolUsu === $rol) {
+            $usuarios = $this->usuarios->where('estado', $estado)->findAll();
+            $data = ['titulo' => 'Usuarios', 'datos' => $usuarios];
+
+            echo view('header');
+            echo view('usuarios/usuarios', $data);
+            echo view('footer');
+        } else {
+            return redirect()->to(base_url() . '/productos');
+        }
+    }
 
 
-        $usuarios = $this->usuarios->where('activo', $activo)->findAll();
-        $data = ['titulo' => 'Usuarios', 'datos' => $usuarios];
+    public function valida()
+    {
+        $session = session();
+        $rol = $session->rol;
 
-        echo view('header');
-        echo view('usuarios/usuarios', $data);
-        echo view('footer');
+        $rol = "Administrador";
+        $usuario = $this->request->getPost('nombreUsuario');
+
+        $datosUsuario = $this->usuarios->where('nombreUsuario', $usuario)->first();
+
+        if ($this->usuarios->where('nombreUsuario', $usuario)->first() && $datosUsuario['rol'] === $rol) {
+
+            $usuario = $this->request->getPost('nombreUsuario');
+            $password = $this->request->getPost('password');
+            $datosUsuario = $this->usuarios->where('nombreUsuario', $usuario)->first();
+            $cadena = strval($password);
+
+            if (password_verify($cadena, $datosUsuario['password'])) {
+
+                $datosSession =
+                    [
+                        'idUsuario' => $datosUsuario['id'],
+                        'nombres' => $datosUsuario['nombres'],
+                        'nombreUsuario' => $datosUsuario['nombreUsuario'],
+                        'rol' => $datosUsuario['rol']
+                    ];
+
+                $session = session();
+                $session->set($datosSession);
+
+                return redirect()->to(base_url() . '/usuarios');
+            } else {
+                return redirect()->to(base_url() . '/');
+            }
+        } else {
+
+            $usuario = $this->request->getPost('nombreUsuario');
+            $password = $this->request->getPost('password');
+            $datosUsuario = $this->usuarios->where('nombreUsuario', $usuario)->first();
+            $cadena = strval($password);
+
+            if (password_verify($cadena, $datosUsuario['password'])) {
+
+                $datosSession =
+                    [
+                        'idUsuario' => $datosUsuario['id'],
+                        'nombres' => $datosUsuario['nombres'],
+                        'nombreUsuario' => $datosUsuario['nombreUsuario'],
+                        'rol' => $datosUsuario['rol']
+                    ];
+
+                $session = session();
+                $session->set($datosSession);
+
+                return redirect()->to(base_url() . '/productos');
+            } else {
+                return redirect()->to(base_url() . '/');
+            }
+        }
+    }
+
+
+    public function insertar()
+    {
+        $password = $this->request->getVar('password');
+        $cadena = strval($password);
+        $contrasenaEncriptada = password_hash($cadena, PASSWORD_BCRYPT);
+        // Verifica que la solicitud sea una solicitud AJAX
+        if ($this->request->isAJAX()) {
+            $model = new UsuariosModel();
+
+            // Obtiene los datos enviados por AJAX
+            $data = [
+                'nombres' => $this->request->getVar('nombres'),
+                'primerApellido' => $this->request->getVar('primerApellido'),
+                'segundoApellido' => $this->request->getVar('segundoApellido'),
+                'nombreUsuario' => $this->request->getVar('nombreUsuario'),
+                'password' => $contrasenaEncriptada,
+                'rol' => $this->request->getVar('rol'),
+                'estado' => 1
+            ];
+
+            // Inserta los datos en la base de datos
+            $inserted = $model->insert($data);
+
+            if ($inserted) {
+                // Devuelve una respuesta JSON de éxito
+                return $this->response->setJSON(['message' => 'Registro exitoso']);
+            } else {
+                // Devuelve una respuesta JSON de error
+                return $this->response->setJSON(['message' => 'Error al registrar']);
+            }
+        } else {
+            return $this->response->setJSON(['message' => 'Error al registrar']);
+
+            // Si no es una solicitud AJAX, redirige o muestra una vista de error
+        }
     }
 
 
 
-    public function eliminados($activo = 0)
+    public function buscar()
     {
-        $usuarios = $this->usuarios->where('activo', $activo)->findAll();
+        // Devuelve los resultados como JSON
+        $this->usuarios = new UsuariosModel();
+        $db = \Config\Database::connect();
+        $buscare = $this->request->getPost('usuarios');
+        $cadena = strval($buscare);
+        $builder = $db->table('usuarios');
+        $builder->like('usuarios.ciNit', $cadena);
+        $builder->where('usuarios.estado', 1);
+        $query = $builder->get();
+        $usuario = $query->getResult();
+        return $this->response->setJSON($usuario);
+    }
+
+
+    public function obtenerDatos()
+    {
+        $db = \Config\Database::connect();
+        $builder = $db->table('usuarios');
+        //$builder = $db->table('categorias');
+        //$this->productos->select('*');
+        $builder->select('usuarios.id');
+        $builder->select('usuarios.nombres');
+        $builder->select('usuarios.primerApellido');
+        $builder->select('usuarios.segundoApellido');
+        $builder->select('usuarios.nombreUsuario');
+        $builder->select('usuarios.password');
+        $builder->select('usuarios.rol');
+        $builder->where('usuarios.estado', 1);
+
+        //APLICAR ORDER BY,  PORQUE NOS MUESTRA TODO DESORDENADO
+        $usuarios = $builder->get();
+        $data['usuarios'] = $usuarios->getResult();
+        echo json_encode($data);
+    }
+
+    public function actualizar()
+    {
+        if ($this->request->isAJAX()) {
+            $this->usuarios->update($this->request->getPost('idUsuario'), [
+                'nombres' => $this->request->getPost('nombres'),
+                'primerApellido' => $this->request->getPost('primerApellido'),
+                'segundoApellido' => $this->request->getPost('segundoApellido'),
+                'nobreUsuario' => $this->request->getPost('nobreUsuario'),
+                'password' => $this->request->getPost('password'),
+                'rol' => $this->request->getPost('rol')
+
+            ]);
+            $si = 1;
+
+            if ($si == 1) {
+                // Devuelve una respuesta JSON de éxito
+                return $this->response->setJSON(['message' => 'Registro exitoso']);
+            } else {
+                // Devuelve una respuesta JSON de error
+                return $this->response->setJSON(['message' => 'Error al registrar']);
+            }
+        } else {
+            return $this->response->setJSON(['message' => 'Error al registrar']);
+
+            // Si no es una solicitud AJAX, redirige o muestra una vista de error
+        }
+    }
+
+    public function eliminar()
+    {
+        //$valor = $this->request->getPost('idProducto');
+        if ($this->request->isAJAX()) {
+            //$valor = $this->request->getPost('idProducto');
+            $this->usuarios->update($this->request->getPost('idUsuario'), ['estado' => 0]);
+            return $this->response->setJSON(['message' => 'Registro exitoso']);
+        } else {
+            return $this->response->setJSON(['message' => 'Error al registrar']);
+        }
+    }
+
+    public function obtenerDatosEliminados()
+    {
+        $db = \Config\Database::connect();
+        $builder = $db->table('usuarios');
+        //$builder = $db->table('categorias');
+        //$this->productos->select('*');
+        $builder->select('usuarios.id');
+        $builder->select('usuarios.nombres');
+        $builder->select('usuarios.primerApellido');
+        $builder->select('usuarios.segundoApellido');
+        $builder->select('usuarios.nombreUsuario');
+        $builder->select('usuarios.password');
+        $builder->select('usuarios.rol');
+        $builder->where('usuarios.estado', 0);
+
+        //APLICAR ORDER BY,  PORQUE NOS MUESTRA TODO DESORDENADO
+        $usuarios = $builder->get();
+        $data['usuarios'] = $usuarios->getResult();
+        echo json_encode($data);
+    }
+
+
+    public function reingresarDatosEliminados()
+    {
+        //$valor = $this->request->getPost('idProducto');
+        if ($this->request->isAJAX()) {
+            //$valor = $this->request->getPost('idProducto');
+            $this->usuarios->update($this->request->getPost('idUsuarioEliminado'), ['estado' => 1]);
+            return $this->response->setJSON(['message' => 'Registro exitoso']);
+        } else {
+            return $this->response->setJSON(['message' => 'Error al registrar']);
+        }
+    }
+
+
+    public function buscar2()
+    {
+        $busUsu = $this->request->getPost('buscarUsuario');
+
+        $model = new UsuariosModel(); // Reemplaza 'MiModelo' con el nombre de tu modelo
+        $resultado = $model->like('nombreUsuario', $busUsu)->findAll(); // Cambia 'nombre' por el campo que deseas buscar
+
+        // Devuelve los resultados como JSON
+        return $this->response->setJSON($resultado);
+    }
+
+    //METODO VERIFICAR PASSWORD PARA ACTUALIZAR PASSWORD
+    public function actualizaPas()
+    {
+        $session = session();
+        $nombreUsuario = $session->nombreUsuario;
+
+        $password = $this->request->getPost('password');
+        $cadena = strval($password);
+        $datosUsuario = $this->usuarios->where('nombreUsuario', $nombreUsuario)->first();
+
+        if (password_verify($cadena, $datosUsuario['password'])) {
+            return $this->response->setJSON(['message' => 'Registro exitoso']);
+        } else {
+            return $this->response->setJSON(['message' => 'Error']);
+        }
+    }
+
+    //DEBEMOS GUIARNOS CON ESTE MÉTODO PARA REALIZAR LA ACTUALIZACIÓN DE LA CONTRACEÑA
+    public function actualizaPasUsu()
+    {
+        $password = $this->request->getPost('newPassword');
+        $cadena = strval($password);
+
+        $contrasenaEncriptada = password_hash($cadena, PASSWORD_BCRYPT);
+
+        $cambio = 1;
+        if ($cambio == 1) {
+            $session = session();
+            $idUsuario = $session->idUsuario;
+
+            $this->usuarios->update($idUsuario, ['password' => $contrasenaEncriptada]);
+
+            return $this->response->setJSON(['message' => 'Registro exitoso']);
+        } else {
+
+            return $this->response->setJSON(['message' => 'Error']);
+        }
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    //MÉTODOS CRUDDS ANTIGUOS
+    public function eliminados2($estado = 0)
+    {
+        $usuarios = $this->usuarios->where('estado', $estado)->findAll();
         $data = ['titulo' => 'Usuarios-Eliminados', 'datos' => $usuarios];
         echo view('header');
         echo view('usuarios/eliminados', $data);
@@ -127,166 +409,16 @@ class Usuarios extends BaseController
 
     public function nuevo()
     {
-        $cajas = $this->cajas->where('activo', 1)->findAll();
-        $roles = $this->roles->where('activo', 1)->findAll();
-
-        $data = ['titulo' => 'Agregar Usuarios', 'cajas' => $cajas, 'roles' => $roles];
+        $data = ['titulo' => 'Agregar-Usuarios-Administrador'];
         echo view('header');
         echo view('usuarios/nuevo', $data);
         echo view('footer');
     }
 
 
-    public function correo()
-    {
-        $asunto = $this->request->getPost('nombre');
-        $mensaje = $this->request->getPost('password');
-        $correo = $this->request->getPost('usuario');
-
-
-        $email = \Config\Services::email();
-
-        $email->setFrom('ferreteri@example.com', 'Empresa');
-        $email->setTo($correo);
-        //$email->setCC('another@another-example.com');
-        //$email->setBCC('them@their-example.com');
-
-        $email->setSubject($asunto);
-        $email->setMessage($mensaje);
-
-        $email->send();
-
-        echo view('header');
-        echo view('usuarios/nuevo');
-        echo view('footer');
-    }
-
-    public function pdf()
-    {
-
-        // Cargar el modelo de la base de datos y recuperar los datos que desees
-        $usuarioModel = new \App\Models\ClientesModel();
-        $data['clientes'] = $usuarioModel->findAll();
-
-        // Crear un nuevo objeto FPDF
-        $pdf = new FPDF();
-
-        $pdf->AddPage();
-
-        // Establecer el título del documento
-        $pdf->SetTitle('Listado de Usuarios');
-
-        // Configurar fuente y tamaño de texto
-        $pdf->SetFont('Arial', 'B', 12);
-
-        // Agregar título
-        $pdf->Cell(0, 10, 'Listado de Usuarios', 0, 1, 'C');
-       
-        $pdf->Cell(20, 10, 'Nombre', 1);
-        $pdf->Cell(90, 10, 'direccion', 1);
-        $pdf->Cell(30, 10, 'telefono', 1);
-        $pdf->Cell(40, 10, 'correo', 1);
-        $pdf->Ln(); 
-       
-
-        // Crear el contenido del PDF
-        foreach ($data['clientes'] as $usuario) {
-          
-            $pdf->Cell(20, 10, $usuario['nombre'], 1);
-            $pdf->Cell(90, 10, $usuario['direccion'], 1);
-            $pdf->Cell(30, 10, $usuario['telefono'], 1);
-            $pdf->Cell(40, 10, $usuario['correo'], 1);
-            $pdf->Ln();
-        }
-
-        // Salida del PDF (puedes guardar o mostrar en el navegador)
-        $pdf->Output('listado_usuarios.pdf', 'I'); // 'I' para mostrar en el navegador, 'F' para guardar en un archivo
-
-        exit();
-    }
-
-
-    public function excel()
-    {
-        $spreadsheet = new Spreadsheet();
-        $activeWorksheet = $spreadsheet->getActiveSheet();
-        $activeWorksheet->setCellValue('A1', 'Hello World !');
-
-        header('Content-Type: application/vnd.ms-excel');
-        header('Content-Disposition: attachment;filename="miexcel.xls"');
-        header('Cache-Control: max-age=0');
-
-        $writer = IOFactory::createWriter($spreadsheet, 'Xls');
-        $writer->save('php://output');
-
-        //DE ESTA FORMA LE DECIMOS QUE LA DESCARGA SE HAGA EN EL OREDENADOR
-        $writer->save('php://output');
-
-
-        //$writer = new Xlsx($spreadsheet);
-        //$writer->save('hello world.xlsx');
-
-        //echo view('usuarios/excel');
-
-    }
-
-
-    public function insertar()
-    {
-        //$letras = "1234567890qwertyuiop+asdfghjklzxcvbnm-QWERTYUIOPASDFGHJKLZXCVBNM";
-        //$tamanio = 6;
-
-        //$generado=substr(str_shuffle($letras),0,$tamanio);
-        $contra = $this->request->getPost('password');
-
-
-        //$contra = $this->request->getPost('password');
-        $cadenaUno = strval($contra);
-
-        if ($this->request->getPost() && $this->validate($this->reglas)) {
-
-            $this->usuarios->save([
-                'usuario' => $this->request->getPost('usuario'),
-                'password' => password_hash($cadenaUno, PASSWORD_BCRYPT, ['cost' => 5]),
-                'nombre' => $this->request->getPost('nombre'),
-                'id_caja' => $this->request->getPost('id_caja'),
-                'id_rol' => $this->request->getPost('id_rol'),
-                'activo' => 1
-            ]);
-
-            $asunto = $this->request->getPost('nombre');
-            $mensaje = $this->request->getPost('password');
-            $correo = $this->request->getPost('usuario');
-
-            $email = \Config\Services::email();
-
-            $email->setFrom('ferreteri@example.com', 'Empresa');
-            $email->setTo($correo);
-            //$email->setCC('another@another-example.com');
-            //$email->setBCC('them@their-example.com');
-
-            $email->setSubject($asunto);
-            $email->setMessage($mensaje);
-
-            $email->send();
-
-
-            return redirect()->to(base_url() . '/usuarios');
-        } else {
-            $cajas = $this->cajas->where('activo', 1)->findAll();
-            $roles = $this->roles->where('activo', 1)->findAll();
-
-            $data = ['titulo' => 'Agregar-Usuarios', 'cajas' => $cajas, 'roles' => $roles, 'validation' => $this->validator];
-            echo view('header');
-            echo view('usuarios/nuevo', $data);
-            echo view('footer');
-        }
-    }
-
 
     public function editar($id, $valid = null)
     {
-
         $unidad = $this->usuarios->where('id', $id)->first();
         if ($valid != null) {
             $data = ['titulo' => 'Editar Usuario', 'datos' => $unidad, 'validation' => $valid];
@@ -305,12 +437,12 @@ class Usuarios extends BaseController
     }
 
 
-    public function actualizar()
+    public function actualizar2()
     {
         if ($this->request->getPost() && $this->validate($this->reglas)) {
             $this->usuarios->update($this->request->getPost('id'), [
-                'nombre' => $this->request->getPost('nombre'),
-                'nombre_corto' => $this->request->getPost('nombre_corto')
+                'nombre' => $this->request->getPost('nombre')
+
             ]);
 
             return redirect()->to(base_url() . '/usuarios');
@@ -320,9 +452,9 @@ class Usuarios extends BaseController
     }
 
 
-    public function eliminar($id)
+    public function eliminar2($id)
     {
-        $this->usuarios->update($id, ['activo' => 0]);
+        $this->usuarios->update($id, ['estado' => 0]);
 
         return redirect()->to(base_url() . '/usuarios');
     }
@@ -330,7 +462,7 @@ class Usuarios extends BaseController
 
     public function reingresar($id)
     {
-        $this->usuarios->update($id, ['activo' => 1]);
+        $this->usuarios->update($id, ['estado' => 1]);
 
         return redirect()->to(base_url() . '/usuarios');
     }
@@ -340,62 +472,42 @@ class Usuarios extends BaseController
         echo view('login');
     }
 
+    //----------------------------------------------------------------------
 
-    //realizar nueva mente un nuevo login - puede que sea las llaves foraneas
 
-
-    public function valida()
+    public function insertar2()
     {
-        $usuario = $this->request->getPost('usuario');
         $password = $this->request->getPost('password');
         $cadena = strval($password);
+        $contrasenaEncriptada = password_hash($cadena, PASSWORD_BCRYPT);
+
+        if ($this->request->getPost() && $this->validate($this->reglas)) {
+
+            $this->usuarios->save([
+                'nombreUsuario' => $this->request->getPost('nombreUsuario'),
+                'password' =>  $contrasenaEncriptada,
+                'rol' => $this->request->getPost('rol'),
+                'estado' => 1
+            ]);
 
 
-        $datosUsuario = $this->usuarios->where('usuario', $usuario)->first();
-
-        if ($this->usuarios->where('usuario', $usuario)->first()) {
-
-
-            $usuario = $this->request->getPost('usuario');
-            $password = $this->request->getPost('password');
-            $datosUsuario = $this->usuarios->where('usuario', $usuario)->first();
-            $cadena = strval($password);
-
-            if (password_verify($cadena, $datosUsuario['password'])) {
-
-                $datosSession =
-                    [
-                        'id_usuario' => $datosUsuario['id'],
-                        'nombre' => $datosUsuario['nombre'],
-                        'usuario' => $datosUsuario['usuario'],
-                        'id_caja' => $datosUsuario['id_caja'],
-                        'id_rol' => $datosUsuario['id_rol']
-                    ];
-
-                $session = session();
-                $session->set($datosSession);
-
-                return redirect()->to(base_url() . '/unidades'); //unidades
-            } else {
-                $data['error'] = "EL USUARIO Y/O CONTRASEÑA SON INCORRECTOS";
-                echo view('login', $data);
-            }
+            return redirect()->to(base_url() . '/usuarios');
         } else {
-            $data['error'] = "EL USUARIO Y/O CONTRASEÑA SON INCORRECTOS";
-            echo view('login', $data);
+
+            $data = ['titulo' => 'Agregar-Usuarios', 'validation' => $this->validator];
+            echo view('header');
+            echo view('usuarios/nuevo', $data);
+            echo view('footer');
         }
-
-        //ES MUY IMPORTANTE VER CUANDO DECLARAR O NO UN AVARIABLE DENTRO DE UNA 
-        //CONDICIÓN "EN ESTE CASO LA DECLARACIÓN DE VARIABLE SOLO $DATOSUSUSARIO"
-        //NOS MARCABA UN ERROR, SE PROCEDIÓ A QUITAR LA VARIABLE Y FUNCIONÓ CORRECTAMENTE.
-        //&& $this->usuarios->where('usuario', $usuario)->first()
-
-
     }
 
 
 
 
+    //-----------------------------------------------------------------------------
+
+    //ESTAS SECIONES DEBEMOS LLAMARLO DENTRO DEL MÉTODO VALIDAR, ADENTRO DEL MÉTODO DONDE SE 
+    //REALIZA LA VALIDACIÓN DEL PASSWORD
     public function logout()
     {
         $session = session();
@@ -406,9 +518,9 @@ class Usuarios extends BaseController
 
     public function cambia_pasword()
     {
-        //$session = session();
+        //$session = session();->ya estaba cmentado
 
-        $usuario = $this->usuarios->where('activo', 1)->first();
+        $usuario = $this->usuarios->where('estado', 1)->first();
         //$usuario = $this->usuarios->where('usuario', $session->id_usuario)->first();
         $data = ['titulo' => 'Cambiar Cntraseña', 'usuario' => $usuario];
 
@@ -418,19 +530,18 @@ class Usuarios extends BaseController
     }
 
 
-    public function actualiza_pasword()
+    public function actualiza_pasword2()
     {
-        $password = $this->request->getPost('password');
-        $cadena = strval($password);
-
+        $contrasena = 'password';
+        $contrasenaEncriptada = password_hash($contrasena, PASSWORD_BCRYPT);
 
         if ($this->request->getPost() && $this->validate($this->reglasCambia)) {
             $session = session();
-            $idUsuario = $session->id_usuario;
+            $idUsuario = $session->idUsuario;
 
-            $this->usuarios->update($idUsuario, ['password' => password_hash($cadena, PASSWORD_BCRYPT)]);
+            $this->usuarios->update($idUsuario, ['password' => $contrasenaEncriptada]);
             //$encrypter = password_hash($this->request->getPost('password'),PASSWORD_DEFAULT);
-            $usuario = $this->usuarios->where('activo', 1)->first();
+            $usuario = $this->usuarios->where('estado', 1)->first();
             $data = ['titulo' => 'Cambiar Cntraseña', 'usuario' => $usuario, 'validation' => $this->validator];
 
             echo view('header');
@@ -440,7 +551,7 @@ class Usuarios extends BaseController
             return redirect()->to(base_url() . '/usuarios');
         } else {
 
-            $usuario = $this->usuarios->where('activo', 1)->first();
+            $usuario = $this->usuarios->where('estado', 1)->first();
             //$usuario = $this->usuarios->where('usuario', $session->id_usuario)->first();
             $data = ['titulo' => 'Cambiar Contraseña', 'usuario' => $usuario, 'validation' => $this->validator];
 
