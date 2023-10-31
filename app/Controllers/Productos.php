@@ -22,7 +22,7 @@ class Productos extends BaseController
         $this->categorias = new CategoriasModel();
         $this->productosCategorias = new ProductosCategoriasModel();
 
-        require APPPATH . 'Libraries/phpqrcode/qrlib.php';
+        //require APPPATH . 'Libraries/phpqrcode/qrlib.php';
     }
 
     public function index($estado = 1)
