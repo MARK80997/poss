@@ -97,7 +97,7 @@ class Usuarios extends BaseController
         $session = session();
         $rol = $session->rol;
 
-        $rol = "Empleado";
+        $rol = "Administrador";
         $usuario = $this->request->getPost('nombreUsuario');
 
         $datosUsuario = $this->usuarios->where('nombreUsuario', $usuario)->first();
@@ -124,7 +124,7 @@ class Usuarios extends BaseController
 
                 return redirect()->to(base_url() . '/usuarios');
             } else {
-                return redirect()->to(base_url() . '/usuarios');
+                return redirect()->to(base_url() . '/');
             }
         } else {
 
