@@ -12,13 +12,13 @@
         protected $returnType     = 'array';
         protected $useSoftDeletes = false;
 
-        protected $allowedFields = ['usuario', 'password','nombre','id_caja','id_rol','activo'];
+        protected $allowedFields = ['nombres','primerApellido','segundoApellido','nombreUsuario', 'password','rol','estado'];
 
         // Dates
         protected $useTimestamps = true;
         protected $dateFormat    = 'datetime';
-        protected $createdField  = 'fecha_alta';
-        protected $updatedField  = 'fecha_modifica';
+        protected $createdField  = 'fechaRegistro';
+        protected $updatedField  = 'fechaActualizacion';
         protected $deletedField  = 'deleted_at';
 
         // Validation

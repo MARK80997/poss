@@ -12,14 +12,13 @@
         protected $returnType     = 'array';
         protected $useSoftDeletes = false;
 
-        protected $allowedFields = ['nombre', 'direccion',
-        'telefono','correo','activo'];
+        protected $allowedFields = ['razonSocial','ciNit','estado'];
 
         // Dates
         protected $useTimestamps = true;
         protected $dateFormat    = 'datetime';
-        protected $createdField  = 'fecha_alta';
-        protected $updatedField  = 'fecha_edit';
+        protected $createdField  = 'fechaRegistro';
+        protected $updatedField  = 'fechaActualizacion';
         protected $deletedField  = 'deleted_at';
 
         // Validation
@@ -28,4 +27,3 @@
         protected $skipValidation       = false;
               
     }
-    ?>

@@ -1,34 +1,34 @@
-<?php namespace App\Models;
-	
-	use CodeIgniter\Model;
+<?php
 
-	class ProductosModel  extends Model {
+namespace App\Models;
 
-        protected $table      = 'productos';
-        protected $primaryKey = 'id';
+use CodeIgniter\Model;
 
-        protected $useAutoIncrement = true;
+class ProductosModel  extends Model
+{
 
-        protected $returnType     = 'array';
-        protected $useSoftDeletes = false;
+    protected $table      = 'productos';
+    protected $primaryKey = 'id';
 
-        protected $allowedFields = ['codigo','nombre', 'precio_venta',
-        'precio_compra','existencias','stock_minimo',
-        'inventariable','id_unidad','id_categoria','activo'];
+    protected $useAutoIncrement = true;
 
-        // Dates
-        protected $useTimestamps = true;
-        protected $dateFormat    = 'datetime';
-        protected $createdField  = 'fecha_alta';
-        protected $updatedField  = 'fecha_edit';
-        protected $deletedField  = 'deleted_at';
+    protected $returnType     = 'array';
+    protected $useSoftDeletes = false;
 
-        // Validation
-        protected $validationRules      = [];
-        protected $validationMessages   = [];
-        protected $skipValidation       = false;
-              
-    }
+    protected $allowedFields = [
+        'nombre', 'unidadMedida',
+        'precioBase', 'stock', 'marca', 'idCategoria','estado'
+    ];
 
+    // Dates
+    protected $useTimestamps = true;
+    protected $dateFormat    = 'datetime';
+    protected $createdField  = 'fechaRegistro';
+    protected $updatedField  = 'fechaActualizacion';
+    protected $deletedField  = 'deleted_at';
 
-?>
+    // Validation
+    protected $validationRules      = [];
+    protected $validationMessages   = [];
+    protected $skipValidation       = false;
+}
