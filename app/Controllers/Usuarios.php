@@ -97,7 +97,7 @@ class Usuarios extends BaseController
         $session = session();
         $rol = $session->rol;
 
-        $rol = "Administrador";
+        $rol = "Empleado";
         $usuario = $this->request->getPost('nombreUsuario');
 
         $datosUsuario = $this->usuarios->where('nombreUsuario', $usuario)->first();
