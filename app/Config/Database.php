@@ -29,7 +29,7 @@ class Database extends Config
         'hostname' => 'localhost',
         'username' => 'root',
         'password' => 'mm80997',
-        'database' => 'pos',
+        'database' => 'ferretera',
         'DBDriver' => 'MySQLi',
         'DBPrefix' => '',
         'pConnect' => false,
