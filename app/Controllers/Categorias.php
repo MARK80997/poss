@@ -1,5 +1,5 @@
 <?php
-
+//EN ESTE ARCHIVO GESTIONAMOS LAS OPERACIONES DE LISTAR, ELIMINAR Y ACTUALIZAR LAS CATEGORÍAS DEL MÓDULO
 namespace App\Controllers;
 use App\Controllers\BaseController;
 use App\Models\CategoriasModel;
