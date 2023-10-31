@@ -124,7 +124,7 @@ class Usuarios extends BaseController
 
                 return redirect()->to(base_url() . '/usuarios');
             } else {
-                return redirect()->to(base_url() . '/');
+                return redirect()->to(base_url() . '/usuarios');
             }
         } else {
 
