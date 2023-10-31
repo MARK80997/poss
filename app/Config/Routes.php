@@ -12,7 +12,7 @@ $routes = Services::routes();
  */
 $routes->setDefaultNamespace('App\Controllers');
 //$routes->setDefaultController('Home');
-$routes->setDefaultController('usuarios');
+$routes->setDefaultController('Usuarios');
 $routes->setDefaultMethod('index');
 $routes->setTranslateURIDashes(false);
 $routes->set404Override();
@@ -32,120 +32,111 @@ $routes->set404Override();
 // route since we don't have to scan directories.
 
 //$routes->get('/', 'Home::index');
-$routes->get('/', 'usuarios::login');
+$routes->get('/', 'Usuarios::login');
 //$routes->get('/usuarios/valida', 'usuarios::login');
 
-$routes->get('/unidades', 'Unidades::index');
-$routes->get('/unidades/nuevo', 'Unidades::nuevo');
-$routes->post('/unidades/insertar', 'Unidades::insertar');
-$routes->get('/unidades/editar/(:any)', 'Unidades::editar/$1');
-$routes->post('/unidades/actualizar', 'Unidades::actualizar');
-$routes->get('/unidades/eliminar/(:any)', 'Unidades::eliminar/$1');
-$routes->get('/unidades/eliminados', 'Unidades::eliminados');
-$routes->get('/unidades/reingresar/(:any)', 'Unidades::reingresar/$1');
-
-
-$routes->get('/unidadesDos', 'unidadesDos::index');
-$routes->get('/unidadesDos/nuevo', 'unidadesDos::nuevo');
-$routes->post('/unidadesDos/insertar', 'unidadesDos::insertar');
-$routes->get('/unidadesDos/editar/(:any)', 'unidadesDos::editar/$1');
-$routes->post('/unidadesDos/actualizar', 'unidadesDos::actualizar');
-$routes->get('/unidadesDos/eliminar/(:any)', 'unidadesDos::eliminar/$1');
-$routes->get('/unidadesDos/eliminados', 'unidadesDos::eliminados');
-$routes->get('/unidadesDos/reingresar/(:any)', 'unidadesDos::reingresar/$1');
-
-
-
-
-$routes->get('/categorias', 'Categorias::index');
-$routes->get('/categorias/nuevo', 'Categorias::nuevo');
-$routes->post('/categorias/insertar', 'Categorias::insertar');
-$routes->get('/categorias/editar/(:any)', 'Categorias::editar/$1');
-$routes->post('/categorias/actualizar', 'Categorias::actualizar');
-$routes->get('/categorias/eliminar/(:any)', 'Categorias::eliminar/$1');
-$routes->get('/categorias/eliminados', 'Categorias::eliminados');
-$routes->get('/categorias/reingresar/(:any)', 'Categorias::reingresar/$1');
+$routes->get('/usuarios', 'usuarios::index');
+$routes->get('/usuarios/nuevo', 'usuarios::nuevo');
+$routes->post('/usuarios/insertar', 'usuarios::insertar');
+$routes->get('/usuarios/editar/(:any)', 'usuarios::editar/$1');
+$routes->post('/usuarios/actualizar', 'usuarios::actualizar');
+$routes->get('/usuarios/eliminar/(:any)', 'usuarios::eliminar/$1');
+$routes->get('/usuarios/eliminados', 'usuarios::eliminados');
+$routes->get('/usuarios/reingresar/(:any)', 'usuarios::reingresar/$1');
+$routes->post('/usuarios/valida', 'usuarios::valida');
+$routes->get('/usuarios/logout', 'usuarios::logout');
+$routes->get('/usuarios/cambia_pasword', 'usuarios::cambia_pasword');
+$routes->post('/usuarios/actualiza_pasword', 'usuarios::actualiza_pasword');
+//RUTAS AJAX
+$routes->get('/usuarios', 'usuarios::index'); //SE DEBE VOLVER A UN ENLACE NAVEGABLE SIN RECARGAR LA PÁGINA
+$routes->post('/usuarios/insertar', 'usuarios::insertar');
+$routes->post('/usuarios/buscar', 'usuarios::buscar');
+$routes->post('/usuarios/actualizar', 'usuarios::actualizar');
+$routes->post('/usuarios/eliminar', 'usuarios::eliminar');
+$routes->get('/usuarios/obtenerDatos', 'usuarios::obtenerDatos');
+$routes->get('/usuarios/obtenerDatosEliminados', 'usuarios::obtenerDatosEliminados');
+$routes->post('/usuarios/reingresarDatosEliminados', 'usuarios::reingresarDatosEliminados');
+//ACTUALIZANDO PASSWORD
+$routes->post('/usuarios/actualizaPas', 'usuarios::actualizaPas');
+$routes->post('/usuarios/actualizaPasUsu', 'usuarios::actualizaPasUsu');
+//LECTURAQR
+$routes->post('/usuarios/buscar', 'usuarios::buscar');
 
 
 
-$routes->get('/productos', 'Productos::index');
-$routes->get('/productos/nuevo', 'Productos::nuevo');
-$routes->post('/productos/insertar', 'Productos::insertar');
-$routes->get('/productos/editar/(:any)', 'Productos::editar/$1');
-$routes->post('/productos/actualizar', 'Productos::actualizar');
-$routes->get('/productos/eliminar/(:any)', 'Productos::eliminar/$1');
-$routes->get('/productos/eliminados', 'Productos::eliminados');
-$routes->get('/productos/reingresar/(:any)', 'Productos::reingresar/$1');
-
-    
-$routes->get('/productosDos', 'productosDos::index');
-$routes->get('/productosDos/nuevo', 'productosDos::nuevo');
-$routes->post('/productosDos/insertar', 'productosDos::insertar');
-$routes->get('/productosDos/editar/(:any)', 'productosDos::editar/$1');
-$routes->post('/productosDos/actualizar', 'productosDos::actualizar');
-$routes->get('/productosDos/eliminar/(:any)', 'productosDos::eliminar/$1');
-$routes->get('/productosDos/eliminados', 'productosDos::eliminados');
-$routes->get('/productosDos/reingresar/(:any)', 'productosDos::reingresar/$1');
-
-
-
-   
-$routes->get('/clientes', 'Clientes::index');
-$routes->get('/clientes/nuevo', 'Clientes::nuevo');
-$routes->post('/clientes/insertar', 'Clientes::insertar');
-$routes->get('/clientes/editar/(:any)', 'Clientes::editar/$1');
-$routes->post('/clientes/actualizar', 'Clientes::actualizar');
-$routes->get('/clientes/eliminar/(:any)', 'Clientes::eliminar/$1');
-$routes->get('/clientes/eliminados', 'Clientes::eliminados');
-$routes->get('/clientes/reingresar/(:any)', 'Clientes::reingresar/$1');
+//RUTAS ANTIGUAS DEL SISTEMA (REALIZABA LOS CRUDS PERO RECARGANDO LA PÁGINA)
+$routes->get('/productos/nuevo', 'productos::nuevo');
+$routes->get('/productos/editar/(:any)', 'productos::editar/$1');
+$routes->get('/productos/eliminar/(:any)', 'productos::eliminar/$1');
+$routes->get('/productos/reingresar/(:any)', 'productos::reingresar/$1');
+//RUTAS AJAX!!
+$routes->get('/productos', 'productos::index'); //SE DEBE VOLVER A UN ENLACE NAVEGABLE SIN RECARGAR LA PÁGINA
+$routes->post('/productos/insertar', 'productos::insertar');
+$routes->post('/productos/buscar', 'productos::buscar');
+$routes->post('/productos/actualizar', 'productos::actualizar');
+$routes->post('/productos/eliminar', 'productos::eliminar');
+$routes->get('/productos/obtenerDatos', 'productos::obtenerDatos');
+$routes->get('/productos/obtenerDatosEliminados', 'productos::obtenerDatosEliminados');
+$routes->post('/productos/reingresarDatosEliminados', 'productos::reingresarDatosEliminados');
+//LECTURAQR
+$routes->post('/productos/lecturaqr', 'productos::lecturaqr');
 
 
 
 
-$routes->get('/configuracion', 'Configuracion::index');
-$routes->get('/configuracion/nuevo', 'Configuracion::nuevo');
-$routes->post('/configuracion/insertar', 'Configuracion::insertar');
-$routes->get('/configuracion/editar/(:any)', 'Configuracion::editar/$1');
-$routes->post('/configuracion/actualizar', 'Configuracion::actualizar');
-$routes->get('/configuracion/eliminar/(:any)', 'Configuracion::eliminar/$1');
-$routes->get('/configuracion/eliminados', 'Configuracion::eliminados');
-$routes->get('/configuracion/reingresar/(:any)', 'Configuracion::reingresar/$1');
+// RUTAS AJAX
+$routes->get('/categorias', 'categorias::index'); //SE DEBE VOLVER A UN ENLACE NAVEGABLE SIN RECARGAR LA PÁGINA
+$routes->post('/categorias/insertar', 'categorias::insertar');
+$routes->post('/categorias/buscar', 'categorias::buscar');
+$routes->post('/categorias/actualizar', 'categorias::actualizar');
+$routes->post('/categorias/eliminar', 'categorias::eliminar');
+$routes->get('/categorias/obtenerDatos', 'categorias::obtenerDatos');
+$routes->get('/categorias/obtenerDatosEliminados', 'categorias::obtenerDatosEliminados');
+$routes->post('/categorias/reingresarDatosEliminados', 'categorias::reingresarDatosEliminados');
+//LECTURAQR
+$routes->get('/categorias/obtenerCategorias', 'categorias::obtenerCategorias');
 
+
+
+
+// RUTAS AJAX!!
+$routes->get('/clientes', 'clientes::index'); //SE DEBE VOLVER A UN ENLACE NAVEGABLE SIN RECARGAR LA PÁGINA
+$routes->post('/clientes/insertar', 'clientes::insertar');
+$routes->post('/clientes/buscar', 'clientes::buscar');
+$routes->post('/clientes/actualizar', 'clientes::actualizar');
+$routes->post('/clientes/eliminar', 'clientes::eliminar');
+$routes->get('/clientes/obtenerDatos', 'clientes::obtenerDatos');
+$routes->get('/clientes/obtenerDatosEliminados', 'clientes::obtenerDatosEliminados');
+$routes->post('/clientes/reingresarDatosEliminados', 'clientes::reingresarDatosEliminados');
 
 
 
 
 
-$routes->get('/usuarios', 'Usuarios::index');
-$routes->get('/usuarios/nuevo', 'Usuarios::nuevo');
-$routes->post('/usuarios/insertar', 'Usuarios::insertar');
-$routes->get('/usuarios/editar/(:any)', 'Usuarios::editar/$1');
-$routes->post('/usuarios/actualizar', 'Usuarios::actualizar');
-$routes->get('/usuarios/eliminar/(:any)', 'Usuarios::eliminar/$1');
-$routes->get('/usuarios/eliminados', 'Usuarios::eliminados');
-$routes->get('/usuarios/reingresar/(:any)', 'Usuarios::reingresar/$1');
-$routes->post('/usuarios/valida', 'Usuarios::valida');
-$routes->get('/usuarios/logout', 'Usuarios::logout');
-$routes->get('/usuarios/cambia_pasword', 'Usuarios::cambia_pasword');
-$routes->post('/usuarios/actualiza_pasword', 'Usuarios::actualiza_pasword');
-$routes->get('/usuarios/excel', 'Usuarios::excel');
-
-$routes->get('/usuarios/pdf', 'Usuarios::pdf');
+$routes->get('/ventas', 'ventas::index');
+$routes->get('/ventas/nuevo', 'ventas::nuevo');
+$routes->post('/ventas/insertar', 'ventas::insertar');
+$routes->get('/ventas/editar/(:any)', 'ventas::editar/$1');
+$routes->post('/ventas/actualizar', 'ventas::actualizar');
+$routes->get('/ventas/eliminar/(:any)', 'ventas::eliminar/$1');
+$routes->get('/ventas/eliminados', 'ventas::eliminados');
+$routes->get('/ventas/reingresar/(:any)', 'ventas::reingresar/$1');
+//RUTAS AJAX
+$routes->post('/ventas/prueba', 'ventas::prueba'); //SIN USO!!
+$routes->post('/ventas/transaccion', 'ventas::transaccion');
+$routes->get('/ventas/pdf', 'ventas::pdf');
 
 
-
-$routes->get('/compras', 'Compras::index');
-$routes->get('/compras/nuevo', 'Compras::nuevo');
-$routes->post('/compras/insertar', 'Compras::insertar');
-$routes->get('/compras/editar/(:any)', 'Compras::editar/$1');
-$routes->post('/compras/actualizar', 'Compras::actualizar');
-$routes->get('/compras/eliminar/(:any)', 'Compras::eliminar/$1');
-$routes->get('/compras/eliminados', 'Compras::eliminados');
-$routes->get('/compras/reingresar/(:any)', 'Compras::reingresar/$1');
-
+//RUTAS ESPECÍFICAS PARA REPORTES DE TODO TIPO
+$routes->get('/reportes', 'reportes::index');
+//RUTA AJAX PARA BUSCAR PRODUCTO ATRAVÉZ DE UN RANGO DE FECHAS 
+$routes->post('/reportes/buscarProductoFecha', 'reportes::buscarProductoFecha');
+$routes->post('/reportes/generarReporte', 'reportes::generarReporte');
+$routes->post('/reportes/literalTotal', 'reportes::literalTotal');
+$routes->post('/reportes/productoMasVendido', 'reportes::productoMasVendido');
+$routes->post('/reportes/verDetalleVenta', 'reportes::verDetalleVenta');
 
 
-//$routes->get('/compras', 'compras::index');
 
 
 //$routes->get('/', 'Crud::index');
